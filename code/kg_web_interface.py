@@ -6,7 +6,12 @@ Run with: python kg_web_interface.py
 Then visit: http://localhost:5000
 """
 
-from flask import Flask, render_template_string, request, jsonify
+from flask import Flask, render_template_string, request, jsonify, send_from_directory
+try:
+    from flask_cors import CORS
+    CORS_AVAILABLE = True
+except ImportError:
+    CORS_AVAILABLE = False
 from phase1_kg_starter import build_example_wave_kg
 from classes.class_scientific_kg import ScientificKnowledgeGraph
 import json
@@ -14,7 +19,20 @@ import os
 import glob
 import matplotlib.pyplot as plt
 
+# Configure Flask to serve React build
+frontend_dist = os.path.join(os.path.dirname(__file__), 'frontend', 'dist')
+# Don't use static_folder for React build - we'll serve it manually to avoid conflicts
 app = Flask(__name__)
+if CORS_AVAILABLE:
+    CORS(app)
+else:
+    # Add basic CORS headers manually if flask-cors is not available
+    @app.after_request
+    def after_request(response):
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+        response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+        return response
 
 # Global knowledge graph instance
 kg = None
@@ -1243,12 +1261,6 @@ HTML_TEMPLATE = """
 </html>
 """
 
-# API Routes
-@app.route('/')
-def index():
-    """Serve the main interface."""
-    return render_template_string(HTML_TEMPLATE)
-
 @app.route('/api/stats')
 def get_stats():
     """Get graph statistics."""
@@ -1551,6 +1563,44 @@ def api_image():
         return send_file(image_path, mimetype='image/png')
     return "Image not found", 404
 
+# ============================================================================
+# Frontend Routes (must come after all API routes)
+# ============================================================================
+
+# Serve static assets from React build (JS, CSS, etc.)
+@app.route('/assets/<path:filename>')
+def serve_static_assets(filename):
+    """Serve static assets from the React build."""
+    assets_dir = os.path.join(frontend_dist, 'assets')
+    if os.path.exists(assets_dir):
+        return send_from_directory(assets_dir, filename)
+    return "Asset not found", 404
+
+# Serve the React app index
+@app.route('/')
+def index():
+    """Serve the React app index.html."""
+    react_index = os.path.join(frontend_dist, 'index.html')
+    if os.path.exists(react_index):
+        return send_from_directory(frontend_dist, 'index.html')
+    # Fallback to original HTML template if build doesn't exist
+    return render_template_string(HTML_TEMPLATE)
+
+# Catch-all route for React Router (all non-API routes serve React app)
+# This must come last, after all API routes
+@app.route('/<path:path>')
+def serve_react_app(path):
+    """Serve React app for all non-API routes."""
+    # Don't interfere with API routes or static assets - they're handled above
+    # Since API routes are registered first, Flask will match them before this route
+    if path.startswith('api/') or path.startswith('assets/'):
+        return None  # Should not reach here, but just in case
+    
+    react_index = os.path.join(frontend_dist, 'index.html')
+    if os.path.exists(react_index):
+        return send_from_directory(frontend_dist, 'index.html')
+    return render_template_string(HTML_TEMPLATE)
+
 def _get_image_path():
     base_dir = os.path.dirname(current_file) if current_file else os.path.dirname(__file__)
     base_name = os.path.splitext(os.path.basename(current_file) if current_file else 'wave_kg')[0]
@@ -1603,7 +1653,11 @@ def main():
     print("=" * 60 + "\n")
     
     _save_visualization()
-    app.run(debug=True, port=5000)
+    
+    # Check if running in production mode (os already imported at top)
+    debug_mode = os.getenv('FLASK_DEBUG', 'True').lower() == 'true'
+    
+    app.run(debug=debug_mode, port=int(os.getenv('PORT', 5000)), host=os.getenv('HOST', '0.0.0.0'))
 
 if __name__ == "__main__":
     main()

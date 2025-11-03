@@ -1,0 +1,15 @@
+# Flask web framework and dependencies
+Flask>=3.0.0,<4.0.0
+flask-cors>=4.0.0,<5.0.0
+
+# Graph processing
+networkx>=3.0,<4.0
+
+# Visualization
+matplotlib>=3.7.0,<4.0.0
+
+# WSGI server for production (optional but recommended)
+# Uncomment one of the following for production deployment:
+# gunicorn>=21.2.0,<22.0.0
+# waitress>=2.1.2,<3.0.0
+

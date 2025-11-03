@@ -1,0 +1,504 @@
+{
+  "nodes": [
+    {
+      "id": "sine_wave",
+      "metadata": {
+        "type": "concept",
+        "description": "A smooth periodic oscillation described by sin(\u03c9t + \u03c6)",
+        "examples": [
+          "Pure tone in sound",
+          "AC current"
+        ]
+      }
+    },
+    {
+      "id": "periodic_function",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "mathematical_function",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "standing_wave",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "wave",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "wave_equation",
+      "metadata": {
+        "type": "equation",
+        "description": "\u2202\u00b2u/\u2202t\u00b2 = c\u00b2\u2202\u00b2u/\u2202x\u00b2",
+        "examples": [
+          "String vibration",
+          "Sound propagation"
+        ]
+      }
+    },
+    {
+      "id": "traveling_wave",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "soliton",
+      "metadata": {
+        "type": "concept",
+        "description": "A self-reinforcing wave packet that maintains its shape while traveling",
+        "examples": [
+          "Tsunami waves",
+          "Optical solitons in fiber"
+        ]
+      }
+    },
+    {
+      "id": "amplitude",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "wave_description",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "frequency",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "wavelength",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "phase",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "trigonometry",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "fourier_analysis",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "wave_analysis",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "calculus",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "differential_equations",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "second_order_pde",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "dispersion",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "wave_propagation",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "interference",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "superposition",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "diffraction",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "schrodinger_equation",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "complex_pde",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "sine_wave",
+      "target": "periodic_function",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "sine_wave",
+      "target": "wave",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "periodic_function",
+      "target": "mathematical_function",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "standing_wave",
+      "target": "wave",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "wave",
+      "target": "wave_equation",
+      "relation": "has_equation",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "wave_equation",
+      "target": "second_order_pde",
+      "relation": "has_equation",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "traveling_wave",
+      "target": "wave",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "soliton",
+      "target": "wave",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "amplitude",
+      "target": "wave_description",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "frequency",
+      "target": "wave_description",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "wavelength",
+      "target": "wave_description",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "phase",
+      "target": "wave_description",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "trigonometry",
+      "target": "fourier_analysis",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "fourier_analysis",
+      "target": "wave_analysis",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "calculus",
+      "target": "differential_equations",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "differential_equations",
+      "target": "wave_equation",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "dispersion",
+      "target": "wave_propagation",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "interference",
+      "target": "superposition",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "diffraction",
+      "target": "wave_propagation",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "schrodinger_equation",
+      "target": "complex_pde",
+      "relation": "has_equation",
+      "confidence": 1.0,
+      "source_type": "manual"
+    }
+  ],
+  "metadata": {
+    "sine_wave": {
+      "type": "concept",
+      "description": "A smooth periodic oscillation described by sin(\u03c9t + \u03c6)",
+      "examples": [
+        "Pure tone in sound",
+        "AC current"
+      ]
+    },
+    "periodic_function": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "mathematical_function": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "standing_wave": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "wave": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "traveling_wave": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "soliton": {
+      "type": "concept",
+      "description": "A self-reinforcing wave packet that maintains its shape while traveling",
+      "examples": [
+        "Tsunami waves",
+        "Optical solitons in fiber"
+      ]
+    },
+    "amplitude": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "wave_description": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "frequency": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "wavelength": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "phase": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "trigonometry": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "fourier_analysis": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "wave_analysis": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "calculus": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "differential_equations": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "wave_equation": {
+      "type": "equation",
+      "description": "\u2202\u00b2u/\u2202t\u00b2 = c\u00b2\u2202\u00b2u/\u2202x\u00b2",
+      "examples": [
+        "String vibration",
+        "Sound propagation"
+      ]
+    },
+    "dispersion": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "wave_propagation": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "interference": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "superposition": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "diffraction": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "second_order_pde": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "schrodinger_equation": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "complex_pde": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    }
+  }
+}
