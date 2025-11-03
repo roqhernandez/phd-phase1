@@ -6,6 +6,14 @@ Run with: python kg_web_interface.py
 Then visit: http://localhost:5000
 """
 
+# Set matplotlib backend before importing pyplot (required for server environments)
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend (no GUI required)
+
+# Suppress matplotlib warnings (3D projection, etc. - we don't use 3D plotting)
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning, module='matplotlib')
+
 from flask import Flask, render_template_string, request, jsonify, send_from_directory
 try:
     from flask_cors import CORS
@@ -1610,11 +1618,31 @@ def _save_visualization():
     """Save a visualization image for the current KG to the dataset-specific file."""
     if kg is None:
         return
-    image_path = _get_image_path()
-    os.makedirs(os.path.dirname(image_path), exist_ok=True)
-    kg.visualize(concept="", radius=2)
-    plt.savefig(image_path, dpi=150, bbox_inches='tight')
-    plt.close()
+    
+    try:
+        # Check if graph has any nodes
+        if kg.graph.number_of_nodes() == 0:
+            print("Warning: Graph has no nodes, skipping visualization")
+            return
+        
+        image_path = _get_image_path()
+        os.makedirs(os.path.dirname(image_path), exist_ok=True)
+        
+        # Generate visualization
+        kg.visualize(concept="", radius=2)
+        plt.savefig(image_path, dpi=150, bbox_inches='tight')
+        plt.close()
+        
+        print(f"✓ Saved visualization to {image_path}")
+    except Exception as e:
+        print(f"Error generating visualization: {e}")
+        import traceback
+        traceback.print_exc()
+        # Ensure matplotlib figure is closed even on error
+        try:
+            plt.close('all')
+        except:
+            pass
 
 def main():
     """Initialize and run the web interface."""

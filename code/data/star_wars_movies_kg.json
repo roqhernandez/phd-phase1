@@ -1,0 +1,1099 @@
+{
+  "nodes": [
+    {
+      "id": "star_wars_universe",
+      "metadata": {
+        "type": "concept",
+        "description": "Fictional universe created by George Lucas",
+        "examples": [
+          "Films, series, games"
+        ]
+      }
+    },
+    {
+      "id": "skywalker_saga",
+      "metadata": {
+        "type": "concept",
+        "description": "Nine-film epic centered on the Skywalker family",
+        "examples": [
+          "Episodes I–IX"
+        ]
+      }
+    },
+    {
+      "id": "original_trilogy",
+      "metadata": {
+        "type": "collection",
+        "description": "Episodes IV–VI",
+        "examples": [
+          "A New Hope",
+          "The Empire Strikes Back",
+          "Return of the Jedi"
+        ]
+      }
+    },
+    {
+      "id": "prequel_trilogy",
+      "metadata": {
+        "type": "collection",
+        "description": "Episodes I–III",
+        "examples": [
+          "The Phantom Menace",
+          "Attack of the Clones",
+          "Revenge of the Sith"
+        ]
+      }
+    },
+    {
+      "id": "sequel_trilogy",
+      "metadata": {
+        "type": "collection",
+        "description": "Episodes VII–IX",
+        "examples": [
+          "The Force Awakens",
+          "The Last Jedi",
+          "The Rise of Skywalker"
+        ]
+      }
+    },
+    {
+      "id": "film",
+      "metadata": {
+        "type": "concept",
+        "description": "A motion picture",
+        "examples": []
+      }
+    },
+    {
+      "id": "a_new_hope",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode IV (1977)",
+        "examples": []
+      }
+    },
+    {
+      "id": "the_empire_strikes_back",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode V (1980)",
+        "examples": []
+      }
+    },
+    {
+      "id": "return_of_the_jedi",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode VI (1983)",
+        "examples": []
+      }
+    },
+    {
+      "id": "the_phantom_menace",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode I (1999)",
+        "examples": []
+      }
+    },
+    {
+      "id": "attack_of_the_clones",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode II (2002)",
+        "examples": []
+      }
+    },
+    {
+      "id": "revenge_of_the_sith",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode III (2005)",
+        "examples": []
+      }
+    },
+    {
+      "id": "the_force_awakens",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode VII (2015)",
+        "examples": []
+      }
+    },
+    {
+      "id": "the_last_jedi",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode VIII (2017)",
+        "examples": []
+      }
+    },
+    {
+      "id": "the_rise_of_skywalker",
+      "metadata": {
+        "type": "movie",
+        "description": "Episode IX (2019)",
+        "examples": []
+      }
+    },
+    {
+      "id": "george_lucas",
+      "metadata": {
+        "type": "person",
+        "description": "Creator of Star Wars; director of Episodes I, II, III, and IV",
+        "examples": []
+      }
+    },
+    {
+      "id": "irvin_kershner",
+      "metadata": {
+        "type": "person",
+        "description": "Director of Episode V",
+        "examples": []
+      }
+    },
+    {
+      "id": "richard_marquand",
+      "metadata": {
+        "type": "person",
+        "description": "Director of Episode VI",
+        "examples": []
+      }
+    },
+    {
+      "id": "jj_abrams",
+      "metadata": {
+        "type": "person",
+        "description": "Director of Episodes VII and IX",
+        "examples": []
+      }
+    },
+    {
+      "id": "rian_johnson",
+      "metadata": {
+        "type": "person",
+        "description": "Director of Episode VIII",
+        "examples": []
+      }
+    },
+    {
+      "id": "lucasfilm",
+      "metadata": {
+        "type": "organization",
+        "description": "Production company founded by George Lucas",
+        "examples": []
+      }
+    },
+    {
+      "id": "walt_disney_studios",
+      "metadata": {
+        "type": "organization",
+        "description": "Parent company of Lucasfilm (since 2012)",
+        "examples": []
+      }
+    },
+    {
+      "id": "luke_skywalker",
+      "metadata": {
+        "type": "character",
+        "description": "Jedi Knight; central protagonist of the original trilogy",
+        "examples": []
+      }
+    },
+    {
+      "id": "leia_organa",
+      "metadata": {
+        "type": "character",
+        "description": "Princess and Rebel leader (Leia Organa)",
+        "examples": []
+      }
+    },
+    {
+      "id": "han_solo",
+      "metadata": {
+        "type": "character",
+        "description": "Smuggler-turned-hero",
+        "examples": []
+      }
+    },
+    {
+      "id": "darth_vader",
+      "metadata": {
+        "type": "character",
+        "description": "Sith Lord; former Anakin Skywalker",
+        "examples": []
+      }
+    },
+    {
+      "id": "obi_wan_kenobi",
+      "metadata": {
+        "type": "character",
+        "description": "Jedi Master",
+        "examples": []
+      }
+    },
+    {
+      "id": "anakin_skywalker",
+      "metadata": {
+        "type": "character",
+        "description": "Jedi Knight who becomes Darth Vader",
+        "examples": []
+      }
+    },
+    {
+      "id": "padme_amidala",
+      "metadata": {
+        "type": "character",
+        "description": "Queen/Senator of Naboo",
+        "examples": []
+      }
+    },
+    {
+      "id": "rey",
+      "metadata": {
+        "type": "character",
+        "description": "Scavenger-turned-Jedi in the sequel trilogy",
+        "examples": []
+      }
+    },
+    {
+      "id": "kylo_ren",
+      "metadata": {
+        "type": "character",
+        "description": "Dark Side warrior; Ben Solo",
+        "examples": []
+      }
+    },
+    {
+      "id": "y1977",
+      "metadata": {
+        "type": "year",
+        "description": "1977",
+        "examples": []
+      }
+    },
+    {
+      "id": "y1980",
+      "metadata": {
+        "type": "year",
+        "description": "1980",
+        "examples": []
+      }
+    },
+    {
+      "id": "y1983",
+      "metadata": {
+        "type": "year",
+        "description": "1983",
+        "examples": []
+      }
+    },
+    {
+      "id": "y1999",
+      "metadata": {
+        "type": "year",
+        "description": "1999",
+        "examples": []
+      }
+    },
+    {
+      "id": "y2002",
+      "metadata": {
+        "type": "year",
+        "description": "2002",
+        "examples": []
+      }
+    },
+    {
+      "id": "y2005",
+      "metadata": {
+        "type": "year",
+        "description": "2005",
+        "examples": []
+      }
+    },
+    {
+      "id": "y2015",
+      "metadata": {
+        "type": "year",
+        "description": "2015",
+        "examples": []
+      }
+    },
+    {
+      "id": "y2017",
+      "metadata": {
+        "type": "year",
+        "description": "2017",
+        "examples": []
+      }
+    },
+    {
+      "id": "y2019",
+      "metadata": {
+        "type": "year",
+        "description": "2019",
+        "examples": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "skywalker_saga",
+      "target": "star_wars_universe",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "original_trilogy",
+      "target": "skywalker_saga",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "prequel_trilogy",
+      "target": "skywalker_saga",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "sequel_trilogy",
+      "target": "skywalker_saga",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_force_awakens",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_last_jedi",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_rise_of_skywalker",
+      "target": "film",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "original_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "original_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "original_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "prequel_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "prequel_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "prequel_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_force_awakens",
+      "target": "sequel_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_last_jedi",
+      "target": "sequel_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_rise_of_skywalker",
+      "target": "sequel_trilogy",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "george_lucas",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "irvin_kershner",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "richard_marquand",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "george_lucas",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "george_lucas",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "george_lucas",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_force_awakens",
+      "target": "jj_abrams",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_last_jedi",
+      "target": "rian_johnson",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_rise_of_skywalker",
+      "target": "jj_abrams",
+      "relation": "directed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_force_awakens",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_last_jedi",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_rise_of_skywalker",
+      "target": "lucasfilm",
+      "relation": "produced_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "lucasfilm",
+      "target": "walt_disney_studios",
+      "relation": "owned_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "luke_skywalker",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "leia_organa",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "han_solo",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "darth_vader",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "luke_skywalker",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "leia_organa",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "han_solo",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "darth_vader",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "luke_skywalker",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "leia_organa",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "han_solo",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "darth_vader",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "obi_wan_kenobi",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "anakin_skywalker",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "padme_amidala",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "anakin_skywalker",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "padme_amidala",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "obi_wan_kenobi",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "anakin_skywalker",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "padme_amidala",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "obi_wan_kenobi",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_force_awakens",
+      "target": "rey",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_force_awakens",
+      "target": "kylo_ren",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_last_jedi",
+      "target": "rey",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_last_jedi",
+      "target": "kylo_ren",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_rise_of_skywalker",
+      "target": "rey",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_rise_of_skywalker",
+      "target": "kylo_ren",
+      "relation": "features_character",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "a_new_hope",
+      "target": "y1977",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_empire_strikes_back",
+      "target": "y1980",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "return_of_the_jedi",
+      "target": "y1983",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_phantom_menace",
+      "target": "y1999",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "attack_of_the_clones",
+      "target": "y2002",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "revenge_of_the_sith",
+      "target": "y2005",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_force_awakens",
+      "target": "y2015",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_last_jedi",
+      "target": "y2017",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "the_rise_of_skywalker",
+      "target": "y2019",
+      "relation": "released_in_year",
+      "confidence": 1.0,
+      "source_type": "manual"
+    }
+  ],
+  "metadata": {
+    "star_wars_universe": {
+      "type": "concept",
+      "description": "Fictional universe created by George Lucas",
+      "examples": [
+        "Films, series, games"
+      ]
+    },
+    "skywalker_saga": {
+      "type": "concept",
+      "description": "Nine-film epic centered on the Skywalker family",
+      "examples": [
+        "Episodes I–IX"
+      ]
+    },
+    "original_trilogy": {
+      "type": "collection",
+      "description": "Episodes IV–VI",
+      "examples": [
+        "A New Hope",
+        "The Empire Strikes Back",
+        "Return of the Jedi"
+      ]
+    },
+    "prequel_trilogy": {
+      "type": "collection",
+      "description": "Episodes I–III",
+      "examples": [
+        "The Phantom Menace",
+        "Attack of the Clones",
+        "Revenge of the Sith"
+      ]
+    },
+    "sequel_trilogy": {
+      "type": "collection",
+      "description": "Episodes VII–IX",
+      "examples": [
+        "The Force Awakens",
+        "The Last Jedi",
+        "The Rise of Skywalker"
+      ]
+    },
+    "film": {
+      "type": "concept",
+      "description": "A motion picture",
+      "examples": []
+    },
+    "a_new_hope": {
+      "type": "movie",
+      "description": "Episode IV (1977)",
+      "examples": []
+    },
+    "the_empire_strikes_back": {
+      "type": "movie",
+      "description": "Episode V (1980)",
+      "examples": []
+    },
+    "return_of_the_jedi": {
+      "type": "movie",
+      "description": "Episode VI (1983)",
+      "examples": []
+    },
+    "the_phantom_menace": {
+      "type": "movie",
+      "description": "Episode I (1999)",
+      "examples": []
+    },
+    "attack_of_the_clones": {
+      "type": "movie",
+      "description": "Episode II (2002)",
+      "examples": []
+    },
+    "revenge_of_the_sith": {
+      "type": "movie",
+      "description": "Episode III (2005)",
+      "examples": []
+    },
+    "the_force_awakens": {
+      "type": "movie",
+      "description": "Episode VII (2015)",
+      "examples": []
+    },
+    "the_last_jedi": {
+      "type": "movie",
+      "description": "Episode VIII (2017)",
+      "examples": []
+    },
+    "the_rise_of_skywalker": {
+      "type": "movie",
+      "description": "Episode IX (2019)",
+      "examples": []
+    },
+    "george_lucas": {
+      "type": "person",
+      "description": "Creator of Star Wars; director of Episodes I, II, III, and IV",
+      "examples": []
+    },
+    "irvin_kershner": {
+      "type": "person",
+      "description": "Director of Episode V",
+      "examples": []
+    },
+    "richard_marquand": {
+      "type": "person",
+      "description": "Director of Episode VI",
+      "examples": []
+    },
+    "jj_abrams": {
+      "type": "person",
+      "description": "Director of Episodes VII and IX",
+      "examples": []
+    },
+    "rian_johnson": {
+      "type": "person",
+      "description": "Director of Episode VIII",
+      "examples": []
+    },
+    "lucasfilm": {
+      "type": "organization",
+      "description": "Production company founded by George Lucas",
+      "examples": []
+    },
+    "walt_disney_studios": {
+      "type": "organization",
+      "description": "Parent company of Lucasfilm (since 2012)",
+      "examples": []
+    },
+    "luke_skywalker": {
+      "type": "character",
+      "description": "Jedi Knight; central protagonist of the original trilogy",
+      "examples": []
+    },
+    "leia_organa": {
+      "type": "character",
+      "description": "Princess and Rebel leader (Leia Organa)",
+      "examples": []
+    },
+    "han_solo": {
+      "type": "character",
+      "description": "Smuggler-turned-hero",
+      "examples": []
+    },
+    "darth_vader": {
+      "type": "character",
+      "description": "Sith Lord; former Anakin Skywalker",
+      "examples": []
+    },
+    "obi_wan_kenobi": {
+      "type": "character",
+      "description": "Jedi Master",
+      "examples": []
+    },
+    "anakin_skywalker": {
+      "type": "character",
+      "description": "Jedi Knight who becomes Darth Vader",
+      "examples": []
+    },
+    "padme_amidala": {
+      "type": "character",
+      "description": "Queen/Senator of Naboo",
+      "examples": []
+    },
+    "rey": {
+      "type": "character",
+      "description": "Scavenger-turned-Jedi in the sequel trilogy",
+      "examples": []
+    },
+    "kylo_ren": {
+      "type": "character",
+      "description": "Dark Side warrior; Ben Solo",
+      "examples": []
+    },
+    "y1977": {
+      "type": "year",
+      "description": "1977",
+      "examples": []
+    },
+    "y1980": {
+      "type": "year",
+      "description": "1980",
+      "examples": []
+    },
+    "y1983": {
+      "type": "year",
+      "description": "1983",
+      "examples": []
+    },
+    "y1999": {
+      "type": "year",
+      "description": "1999",
+      "examples": []
+    },
+    "y2002": {
+      "type": "year",
+      "description": "2002",
+      "examples": []
+    },
+    "y2005": {
+      "type": "year",
+      "description": "2005",
+      "examples": []
+    },
+    "y2015": {
+      "type": "year",
+      "description": "2015",
+      "examples": []
+    },
+    "y2017": {
+      "type": "year",
+      "description": "2017",
+      "examples": []
+    },
+    "y2019": {
+      "type": "year",
+      "description": "2019",
+      "examples": []
+    }
+  }
+}

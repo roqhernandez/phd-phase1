@@ -1,0 +1,932 @@
+{
+  "nodes": [
+    {
+      "id": "statistics",
+      "metadata": {
+        "type": "concept",
+        "description": "The discipline dealing with data collection, analysis, interpretation, and inference",
+        "examples": [
+          "Descriptive statistics",
+          "Inferential statistics"
+        ]
+      }
+    },
+    {
+      "id": "descriptive_statistics",
+      "metadata": {
+        "type": "concept",
+        "description": "Summarizing and describing features of a dataset",
+        "examples": [
+          "Mean and median of exam scores"
+        ]
+      }
+    },
+    {
+      "id": "inferential_statistics",
+      "metadata": {
+        "type": "concept",
+        "description": "Drawing conclusions about populations from samples",
+        "examples": [
+          "Confidence intervals",
+          "Hypothesis testing"
+        ]
+      }
+    },
+    {
+      "id": "probability",
+      "metadata": {
+        "type": "concept",
+        "description": "Mathematical framework for quantifying uncertainty",
+        "examples": [
+          "Coin toss model",
+          "Bayesian reasoning"
+        ]
+      }
+    },
+    {
+      "id": "random_variable",
+      "metadata": {
+        "type": "concept",
+        "description": "Variable whose values are outcomes of a random phenomenon",
+        "examples": [
+          "Number of heads in 10 tosses"
+        ]
+      }
+    },
+    {
+      "id": "discrete_random_variable",
+      "metadata": {
+        "type": "concept",
+        "description": "Random variable that takes countable values",
+        "examples": [
+          "Binomial outcome"
+        ]
+      }
+    },
+    {
+      "id": "continuous_random_variable",
+      "metadata": {
+        "type": "concept",
+        "description": "Random variable that takes values on a continuum",
+        "examples": [
+          "Normal-distributed measurement"
+        ]
+      }
+    },
+    {
+      "id": "probability_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "Function describing probabilities for outcomes of a random variable",
+        "examples": [
+          "PMF",
+          "PDF",
+          "CDF"
+        ]
+      }
+    },
+    {
+      "id": "normal_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "Bell-shaped continuous distribution N(μ,σ²)",
+        "examples": [
+          "Heights",
+          "Measurement noise"
+        ]
+      }
+    },
+    {
+      "id": "binomial_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "Distribution of successes in fixed trials with probability p",
+        "examples": [
+          "Number of defective items in a batch"
+        ]
+      }
+    },
+    {
+      "id": "poisson_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "Counts of rare events in a fixed interval",
+        "examples": [
+          "Calls per minute at a call center"
+        ]
+      }
+    },
+    {
+      "id": "uniform_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "All values in an interval are equally likely",
+        "examples": [
+          "Random number in [0,1]"
+        ]
+      }
+    },
+    {
+      "id": "mean",
+      "metadata": {
+        "type": "concept",
+        "description": "Arithmetic average of a set of numbers",
+        "examples": [
+          "Average temperature this week"
+        ]
+      }
+    },
+    {
+      "id": "median",
+      "metadata": {
+        "type": "concept",
+        "description": "Middle value of an ordered dataset",
+        "examples": [
+          "Household income median"
+        ]
+      }
+    },
+    {
+      "id": "mode",
+      "metadata": {
+        "type": "concept",
+        "description": "Most frequent value in a dataset",
+        "examples": [
+          "Common shoe size"
+        ]
+      }
+    },
+    {
+      "id": "variance",
+      "metadata": {
+        "type": "concept",
+        "description": "Expected squared deviation from the mean",
+        "examples": [
+          "σ² of measurements"
+        ]
+      }
+    },
+    {
+      "id": "standard_deviation",
+      "metadata": {
+        "type": "concept",
+        "description": "Square root of variance",
+        "examples": [
+          "σ of exam scores"
+        ]
+      }
+    },
+    {
+      "id": "covariance",
+      "metadata": {
+        "type": "concept",
+        "description": "Joint variability of two random variables",
+        "examples": [
+          "Cov(X,Y)"
+        ]
+      }
+    },
+    {
+      "id": "correlation",
+      "metadata": {
+        "type": "concept",
+        "description": "Scaled covariance ranging [-1,1]",
+        "examples": [
+          "Pearson’s r"
+        ]
+      }
+    },
+    {
+      "id": "regression",
+      "metadata": {
+        "type": "concept",
+        "description": "Modeling relationship between variables",
+        "examples": [
+          "Linear regression",
+          "Logistic regression"
+        ]
+      }
+    },
+    {
+      "id": "linear_regression",
+      "metadata": {
+        "type": "concept",
+        "description": "Fits a linear model to predict a response",
+        "examples": [
+          "y = β₀ + β₁x + ε"
+        ]
+      }
+    },
+    {
+      "id": "hypothesis_test",
+      "metadata": {
+        "type": "concept",
+        "description": "Procedure to assess evidence against a null hypothesis",
+        "examples": [
+          "t-test",
+          "χ² test"
+        ]
+      }
+    },
+    {
+      "id": "null_hypothesis",
+      "metadata": {
+        "type": "concept",
+        "description": "Baseline assumption to be tested",
+        "examples": [
+          "μ = μ₀"
+        ]
+      }
+    },
+    {
+      "id": "alternative_hypothesis",
+      "metadata": {
+        "type": "concept",
+        "description": "Competing claim against the null",
+        "examples": [
+          "μ ≠ μ₀"
+        ]
+      }
+    },
+    {
+      "id": "p_value",
+      "metadata": {
+        "type": "concept",
+        "description": "Probability of observing data as extreme as observed under H₀",
+        "examples": [
+          "p = 0.03"
+        ]
+      }
+    },
+    {
+      "id": "confidence_interval",
+      "metadata": {
+        "type": "concept",
+        "description": "Range likely to contain a population parameter",
+        "examples": [
+          "95% CI for mean"
+        ]
+      }
+    },
+    {
+      "id": "central_limit_theorem",
+      "metadata": {
+        "type": "concept",
+        "description": "Sampling distribution of the mean approaches normality",
+        "examples": [
+          "Means of large samples"
+        ]
+      }
+    },
+    {
+      "id": "law_of_large_numbers",
+      "metadata": {
+        "type": "concept",
+        "description": "Sample mean converges to the expected value as n increases",
+        "examples": [
+          "Fair coin empirical mean"
+        ]
+      }
+    },
+    {
+      "id": "likelihood",
+      "metadata": {
+        "type": "concept",
+        "description": "Function of parameters given data",
+        "examples": [
+          "L(θ|x)"
+        ]
+      }
+    },
+    {
+      "id": "maximum_likelihood_estimation",
+      "metadata": {
+        "type": "concept",
+        "description": "Parameter estimation by maximizing likelihood",
+        "examples": [
+          "MLE of normal μ,σ²"
+        ]
+      }
+    },
+    {
+      "id": "bayes_theorem",
+      "metadata": {
+        "type": "equation",
+        "description": "P(A|B) = P(B|A)P(A)/P(B)",
+        "examples": [
+          "Posterior from prior and likelihood"
+        ]
+      }
+    },
+    {
+      "id": "prior",
+      "metadata": {
+        "type": "concept",
+        "description": "Belief about parameter before seeing data",
+        "examples": [
+          "Beta prior for Bernoulli p"
+        ]
+      }
+    },
+    {
+      "id": "posterior",
+      "metadata": {
+        "type": "concept",
+        "description": "Updated belief after observing data",
+        "examples": [
+          "Beta posterior"
+        ]
+      }
+    },
+    {
+      "id": "conditional_probability",
+      "metadata": {
+        "type": "concept",
+        "description": "Probability of A given B",
+        "examples": [
+          "P(A|B)"
+        ]
+      }
+    },
+    {
+      "id": "t_test",
+      "metadata": {
+        "type": "concept",
+        "description": "Test comparing means using t-distribution",
+        "examples": [
+          "One-sample t-test"
+        ]
+      }
+    },
+    {
+      "id": "chi_square_test",
+      "metadata": {
+        "type": "concept",
+        "description": "Test for categorical variables or variance",
+        "examples": [
+          "χ² independence test"
+        ]
+      }
+    },
+    {
+      "id": "sampling",
+      "metadata": {
+        "type": "concept",
+        "description": "Selecting a subset of a population",
+        "examples": [
+          "Simple random sampling"
+        ]
+      }
+    },
+    {
+      "id": "population",
+      "metadata": {
+        "type": "concept",
+        "description": "Entire group of interest",
+        "examples": [
+          "All voters in a country"
+        ]
+      }
+    },
+    {
+      "id": "sample",
+      "metadata": {
+        "type": "concept",
+        "description": "Subset of the population used for analysis",
+        "examples": [
+          "Survey respondents"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "descriptive_statistics",
+      "target": "statistics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "inferential_statistics",
+      "target": "statistics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "random_variable",
+      "target": "probability",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "discrete_random_variable",
+      "target": "random_variable",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "continuous_random_variable",
+      "target": "random_variable",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "random_variable",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "normal_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "binomial_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "poisson_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "uniform_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "mean",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "median",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "mode",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "variance",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "standard_deviation",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "covariance",
+      "target": "correlation",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "correlation",
+      "target": "regression",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "linear_regression",
+      "target": "regression",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "hypothesis_test",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "null_hypothesis",
+      "target": "hypothesis_test",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "alternative_hypothesis",
+      "target": "hypothesis_test",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "p_value",
+      "target": "hypothesis_test",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "confidence_interval",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "central_limit_theorem",
+      "target": "hypothesis_test",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "law_of_large_numbers",
+      "target": "confidence_interval",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "likelihood",
+      "target": "maximum_likelihood_estimation",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "maximum_likelihood_estimation",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "bayes_theorem",
+      "target": "conditional_probability",
+      "relation": "has_equation",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "prior",
+      "target": "bayes_theorem",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "posterior",
+      "target": "bayes_theorem",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "t_test",
+      "target": "hypothesis_test",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "chi_square_test",
+      "target": "hypothesis_test",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "sampling",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "sample",
+      "target": "sampling",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "population",
+      "target": "sample",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    }
+  ],
+  "metadata": {
+    "statistics": {
+      "type": "concept",
+      "description": "The discipline dealing with data collection, analysis, interpretation, and inference",
+      "examples": [
+        "Descriptive statistics",
+        "Inferential statistics"
+      ]
+    },
+    "descriptive_statistics": {
+      "type": "concept",
+      "description": "Summarizing and describing features of a dataset",
+      "examples": [
+        "Mean and median of exam scores"
+      ]
+    },
+    "inferential_statistics": {
+      "type": "concept",
+      "description": "Drawing conclusions about populations from samples",
+      "examples": [
+        "Confidence intervals",
+        "Hypothesis testing"
+      ]
+    },
+    "probability": {
+      "type": "concept",
+      "description": "Mathematical framework for quantifying uncertainty",
+      "examples": [
+        "Coin toss model",
+        "Bayesian reasoning"
+      ]
+    },
+    "random_variable": {
+      "type": "concept",
+      "description": "Variable whose values are outcomes of a random phenomenon",
+      "examples": [
+        "Number of heads in 10 tosses"
+      ]
+    },
+    "discrete_random_variable": {
+      "type": "concept",
+      "description": "Random variable that takes countable values",
+      "examples": [
+        "Binomial outcome"
+      ]
+    },
+    "continuous_random_variable": {
+      "type": "concept",
+      "description": "Random variable that takes values on a continuum",
+      "examples": [
+        "Normal-distributed measurement"
+      ]
+    },
+    "probability_distribution": {
+      "type": "concept",
+      "description": "Function describing probabilities for outcomes of a random variable",
+      "examples": [
+        "PMF",
+        "PDF",
+        "CDF"
+      ]
+    },
+    "normal_distribution": {
+      "type": "concept",
+      "description": "Bell-shaped continuous distribution N(μ,σ²)",
+      "examples": [
+        "Heights",
+        "Measurement noise"
+      ]
+    },
+    "binomial_distribution": {
+      "type": "concept",
+      "description": "Distribution of successes in fixed trials with probability p",
+      "examples": [
+        "Number of defective items in a batch"
+      ]
+    },
+    "poisson_distribution": {
+      "type": "concept",
+      "description": "Counts of rare events in a fixed interval",
+      "examples": [
+        "Calls per minute at a call center"
+      ]
+    },
+    "uniform_distribution": {
+      "type": "concept",
+      "description": "All values in an interval are equally likely",
+      "examples": [
+        "Random number in [0,1]"
+      ]
+    },
+    "mean": {
+      "type": "concept",
+      "description": "Arithmetic average of a set of numbers",
+      "examples": [
+        "Average temperature this week"
+      ]
+    },
+    "median": {
+      "type": "concept",
+      "description": "Middle value of an ordered dataset",
+      "examples": [
+        "Household income median"
+      ]
+    },
+    "mode": {
+      "type": "concept",
+      "description": "Most frequent value in a dataset",
+      "examples": [
+        "Common shoe size"
+      ]
+    },
+    "variance": {
+      "type": "concept",
+      "description": "Expected squared deviation from the mean",
+      "examples": [
+        "σ² of measurements"
+      ]
+    },
+    "standard_deviation": {
+      "type": "concept",
+      "description": "Square root of variance",
+      "examples": [
+        "σ of exam scores"
+      ]
+    },
+    "covariance": {
+      "type": "concept",
+      "description": "Joint variability of two random variables",
+      "examples": [
+        "Cov(X,Y)"
+      ]
+    },
+    "correlation": {
+      "type": "concept",
+      "description": "Scaled covariance ranging [-1,1]",
+      "examples": [
+        "Pearson’s r"
+      ]
+    },
+    "regression": {
+      "type": "concept",
+      "description": "Modeling relationship between variables",
+      "examples": [
+        "Linear regression",
+        "Logistic regression"
+      ]
+    },
+    "linear_regression": {
+      "type": "concept",
+      "description": "Fits a linear model to predict a response",
+      "examples": [
+        "y = β₀ + β₁x + ε"
+      ]
+    },
+    "hypothesis_test": {
+      "type": "concept",
+      "description": "Procedure to assess evidence against a null hypothesis",
+      "examples": [
+        "t-test",
+        "χ² test"
+      ]
+    },
+    "null_hypothesis": {
+      "type": "concept",
+      "description": "Baseline assumption to be tested",
+      "examples": [
+        "μ = μ₀"
+      ]
+    },
+    "alternative_hypothesis": {
+      "type": "concept",
+      "description": "Competing claim against the null",
+      "examples": [
+        "μ ≠ μ₀"
+      ]
+    },
+    "p_value": {
+      "type": "concept",
+      "description": "Probability of observing data as extreme as observed under H₀",
+      "examples": [
+        "p = 0.03"
+      ]
+    },
+    "confidence_interval": {
+      "type": "concept",
+      "description": "Range likely to contain a population parameter",
+      "examples": [
+        "95% CI for mean"
+      ]
+    },
+    "central_limit_theorem": {
+      "type": "concept",
+      "description": "Sampling distribution of the mean approaches normality",
+      "examples": [
+        "Means of large samples"
+      ]
+    },
+    "law_of_large_numbers": {
+      "type": "concept",
+      "description": "Sample mean converges to the expected value as n increases",
+      "examples": [
+        "Fair coin empirical mean"
+      ]
+    },
+    "likelihood": {
+      "type": "concept",
+      "description": "Function of parameters given data",
+      "examples": [
+        "L(θ|x)"
+      ]
+    },
+    "maximum_likelihood_estimation": {
+      "type": "concept",
+      "description": "Parameter estimation by maximizing likelihood",
+      "examples": [
+        "MLE of normal μ,σ²"
+      ]
+    },
+    "bayes_theorem": {
+      "type": "equation",
+      "description": "P(A|B) = P(B|A)P(A)/P(B)",
+      "examples": [
+        "Posterior from prior and likelihood"
+      ]
+    },
+    "prior": {
+      "type": "concept",
+      "description": "Belief about parameter before seeing data",
+      "examples": [
+        "Beta prior for Bernoulli p"
+      ]
+    },
+    "posterior": {
+      "type": "concept",
+      "description": "Updated belief after observing data",
+      "examples": [
+        "Beta posterior"
+      ]
+    },
+    "conditional_probability": {
+      "type": "concept",
+      "description": "Probability of A given B",
+      "examples": [
+        "P(A|B)"
+      ]
+    },
+    "t_test": {
+      "type": "concept",
+      "description": "Test comparing means using t-distribution",
+      "examples": [
+        "One-sample t-test"
+      ]
+    },
+    "chi_square_test": {
+      "type": "concept",
+      "description": "Test for categorical variables or variance",
+      "examples": [
+        "χ² independence test"
+      ]
+    },
+    "sampling": {
+      "type": "concept",
+      "description": "Selecting a subset of a population",
+      "examples": [
+        "Simple random sampling"
+      ]
+    },
+    "population": {
+      "type": "concept",
+      "description": "Entire group of interest",
+      "examples": [
+        "All voters in a country"
+      ]
+    },
+    "sample": {
+      "type": "concept",
+      "description": "Subset of the population used for analysis",
+      "examples": [
+        "Survey respondents"
+      ]
+    }
+  }
+}

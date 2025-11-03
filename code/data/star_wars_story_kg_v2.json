@@ -1,0 +1,1278 @@
+{
+  "nodes": [
+    {
+      "id": "the_force",
+      "metadata": {
+        "type": "concept",
+        "description": "Energy field binding the galaxy",
+        "examples": [
+          "Light Side",
+          "Dark Side"
+        ]
+      }
+    },
+    {
+      "id": "light_side",
+      "metadata": {
+        "type": "concept",
+        "description": "Selfless facet of the Force",
+        "examples": [
+          "Jedi"
+        ]
+      }
+    },
+    {
+      "id": "dark_side",
+      "metadata": {
+        "type": "concept",
+        "description": "Aggressive facet of the Force",
+        "examples": [
+          "Sith"
+        ]
+      }
+    },
+    {
+      "id": "jedi_order",
+      "metadata": {
+        "type": "organization",
+        "description": "Guardians of peace aligned with Light Side",
+        "examples": [
+          "Jedi Council"
+        ]
+      }
+    },
+    {
+      "id": "jedi_council",
+      "metadata": {
+        "type": "organization",
+        "description": "Leadership body of the Jedi",
+        "examples": [
+          "Masters"
+        ]
+      }
+    },
+    {
+      "id": "sith",
+      "metadata": {
+        "type": "organization",
+        "description": "Dark Side order (Rule of Two)",
+        "examples": [
+          "Sidious",
+          "Vader"
+        ]
+      }
+    },
+    {
+      "id": "galactic_republic",
+      "metadata": {
+        "type": "organization",
+        "description": "Democratic government",
+        "examples": [
+          "Senate"
+        ]
+      }
+    },
+    {
+      "id": "galactic_empire",
+      "metadata": {
+        "type": "organization",
+        "description": "Authoritarian regime",
+        "examples": [
+          "Emperor"
+        ]
+      }
+    },
+    {
+      "id": "rebel_alliance",
+      "metadata": {
+        "type": "organization",
+        "description": "Resistance to the Empire",
+        "examples": []
+      }
+    },
+    {
+      "id": "resistance",
+      "metadata": {
+        "type": "organization",
+        "description": "Opposes the First Order",
+        "examples": []
+      }
+    },
+    {
+      "id": "first_order",
+      "metadata": {
+        "type": "organization",
+        "description": "Successor to Imperial remnants",
+        "examples": []
+      }
+    },
+    {
+      "id": "separatist_alliance",
+      "metadata": {
+        "type": "organization",
+        "description": "Confederacy of Independent Systems",
+        "examples": [
+          "Dooku",
+          "Trade Federation"
+        ]
+      }
+    },
+    {
+      "id": "trade_federation",
+      "metadata": {
+        "type": "organization",
+        "description": "Powerful trade guild",
+        "examples": []
+      }
+    },
+    {
+      "id": "galactic_senate",
+      "metadata": {
+        "type": "organization",
+        "description": "Legislature of the Republic",
+        "examples": []
+      }
+    },
+    {
+      "id": "new_republic",
+      "metadata": {
+        "type": "organization",
+        "description": "Post-Empire government",
+        "examples": []
+      }
+    },
+    {
+      "id": "anakin_skywalker",
+      "metadata": {
+        "type": "character",
+        "description": "Jedi Knight; the Chosen One",
+        "examples": []
+      }
+    },
+    {
+      "id": "darth_vader",
+      "metadata": {
+        "type": "character",
+        "description": "Sith Lord; Anakin after fall",
+        "examples": []
+      }
+    },
+    {
+      "id": "padme_amidala",
+      "metadata": {
+        "type": "character",
+        "description": "Queen/Senator of Naboo",
+        "examples": []
+      }
+    },
+    {
+      "id": "shmi_skywalker",
+      "metadata": {
+        "type": "character",
+        "description": "Anakin’s mother",
+        "examples": []
+      }
+    },
+    {
+      "id": "luke_skywalker",
+      "metadata": {
+        "type": "character",
+        "description": "Jedi who confronts Vader",
+        "examples": []
+      }
+    },
+    {
+      "id": "leia_organa",
+      "metadata": {
+        "type": "character",
+        "description": "Princess/General; leader of Rebels/Resistance",
+        "examples": []
+      }
+    },
+    {
+      "id": "han_solo",
+      "metadata": {
+        "type": "character",
+        "description": "Smuggler turned hero",
+        "examples": []
+      }
+    },
+    {
+      "id": "chewbacca",
+      "metadata": {
+        "type": "character",
+        "description": "Wookiee warrior",
+        "examples": []
+      }
+    },
+    {
+      "id": "obi_wan_kenobi",
+      "metadata": {
+        "type": "character",
+        "description": "Jedi Master; mentor to Anakin and Luke",
+        "examples": []
+      }
+    },
+    {
+      "id": "qui_gon_jinn",
+      "metadata": {
+        "type": "character",
+        "description": "Maverick Jedi Master",
+        "examples": []
+      }
+    },
+    {
+      "id": "yoda",
+      "metadata": {
+        "type": "character",
+        "description": "Grand Master of the Jedi",
+        "examples": []
+      }
+    },
+    {
+      "id": "palpatine",
+      "metadata": {
+        "type": "character",
+        "description": "Senator/Chancellor/Emperor",
+        "examples": []
+      }
+    },
+    {
+      "id": "darth_sidious",
+      "metadata": {
+        "type": "character",
+        "description": "Sith identity of Palpatine",
+        "examples": []
+      }
+    },
+    {
+      "id": "count_dooku",
+      "metadata": {
+        "type": "character",
+        "description": "Darth Tyranus; Separatist leader",
+        "examples": []
+      }
+    },
+    {
+      "id": "darth_maul",
+      "metadata": {
+        "type": "character",
+        "description": "Sith apprentice of Sidious",
+        "examples": []
+      }
+    },
+    {
+      "id": "ahsoka_tano",
+      "metadata": {
+        "type": "character",
+        "description": "Anakin’s Padawan",
+        "examples": []
+      }
+    },
+    {
+      "id": "mace_windu",
+      "metadata": {
+        "type": "character",
+        "description": "Jedi Master and Council member",
+        "examples": []
+      }
+    },
+    {
+      "id": "bail_organa",
+      "metadata": {
+        "type": "character",
+        "description": "Alderaanian senator; Leia’s adoptive father",
+        "examples": []
+      }
+    },
+    {
+      "id": "lando_calrissian",
+      "metadata": {
+        "type": "character",
+        "description": "Administrator of Cloud City; Rebel general",
+        "examples": []
+      }
+    },
+    {
+      "id": "grand_moff_tarkin",
+      "metadata": {
+        "type": "character",
+        "description": "Imperial governor; Death Star commander",
+        "examples": []
+      }
+    },
+    {
+      "id": "mon_mothma",
+      "metadata": {
+        "type": "character",
+        "description": "Leader of the Rebel Alliance",
+        "examples": []
+      }
+    },
+    {
+      "id": "ben_solo",
+      "metadata": {
+        "type": "character",
+        "description": "Son of Han and Leia",
+        "examples": []
+      }
+    },
+    {
+      "id": "kylo_ren",
+      "metadata": {
+        "type": "character",
+        "description": "Dark-side identity of Ben Solo",
+        "examples": []
+      }
+    },
+    {
+      "id": "rey",
+      "metadata": {
+        "type": "character",
+        "description": "Scavenger who becomes a Jedi",
+        "examples": []
+      }
+    },
+    {
+      "id": "jar_jar_binks",
+      "metadata": {
+        "type": "character",
+        "description": "Gungan from Naboo",
+        "examples": []
+      }
+    },
+    {
+      "id": "boba_fett",
+      "metadata": {
+        "type": "character",
+        "description": "Bounty hunter",
+        "examples": []
+      }
+    },
+    {
+      "id": "jango_fett",
+      "metadata": {
+        "type": "character",
+        "description": "Bounty hunter; clone template",
+        "examples": []
+      }
+    },
+    {
+      "id": "watto",
+      "metadata": {
+        "type": "character",
+        "description": "Toydarian junk dealer on Tatooine",
+        "examples": []
+      }
+    },
+    {
+      "id": "jabba_the_hutt",
+      "metadata": {
+        "type": "character",
+        "description": "Crime lord on Tatooine",
+        "examples": []
+      }
+    },
+    {
+      "id": "tatooine",
+      "metadata": {
+        "type": "location",
+        "description": "Desert world of Anakin/Luke",
+        "examples": []
+      }
+    },
+    {
+      "id": "naboo",
+      "metadata": {
+        "type": "location",
+        "description": "Homeworld of Padmé",
+        "examples": []
+      }
+    },
+    {
+      "id": "alderaan",
+      "metadata": {
+        "type": "location",
+        "description": "Leia’s adopted home; destroyed",
+        "examples": []
+      }
+    },
+    {
+      "id": "coruscant",
+      "metadata": {
+        "type": "location",
+        "description": "Ecumenopolis capital",
+        "examples": []
+      }
+    },
+    {
+      "id": "musta",
+      "metadata": {
+        "type": "location",
+        "description": "Volcanic duel site",
+        "examples": []
+      }
+    },
+    {
+      "id": "death_star",
+      "metadata": {
+        "type": "location",
+        "description": "Imperial battle station",
+        "examples": []
+      }
+    },
+    {
+      "id": "death_star_ii",
+      "metadata": {
+        "type": "location",
+        "description": "Second Death Star",
+        "examples": []
+      }
+    },
+    {
+      "id": "cloud_city",
+      "metadata": {
+        "type": "location",
+        "description": "Bespin gas mine city",
+        "examples": []
+      }
+    },
+    {
+      "id": "clone_wars",
+      "metadata": {
+        "type": "event",
+        "description": "Republic vs Separatists war",
+        "examples": []
+      }
+    },
+    {
+      "id": "order_66",
+      "metadata": {
+        "type": "event",
+        "description": "Jedi purge",
+        "examples": []
+      }
+    },
+    {
+      "id": "fall_of_republic",
+      "metadata": {
+        "type": "event",
+        "description": "Transition to Empire",
+        "examples": []
+      }
+    },
+    {
+      "id": "battle_of_yavin",
+      "metadata": {
+        "type": "event",
+        "description": "Destruction of the first Death Star",
+        "examples": []
+      }
+    },
+    {
+      "id": "battle_of_hoth",
+      "metadata": {
+        "type": "event",
+        "description": "Imperial assault on Rebel base",
+        "examples": []
+      }
+    },
+    {
+      "id": "battle_of_endor",
+      "metadata": {
+        "type": "event",
+        "description": "Rebel victory; Emperor falls",
+        "examples": []
+      }
+    },
+    {
+      "id": "duel_on_mustafar",
+      "metadata": {
+        "type": "event",
+        "description": "Obi-Wan vs Anakin",
+        "examples": []
+      }
+    },
+    {
+      "id": "redemption_of_vader",
+      "metadata": {
+        "type": "event",
+        "description": "Vader saves Luke and destroys Sidious",
+        "examples": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "darth_vader",
+      "target": "anakin_skywalker",
+      "relation": "same_as",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "palpatine",
+      "target": "darth_sidious",
+      "relation": "same_as",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "kylo_ren",
+      "target": "ben_solo",
+      "relation": "same_as",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "shmi_skywalker",
+      "target": "anakin_skywalker",
+      "relation": "parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "anakin_skywalker",
+      "target": "luke_skywalker",
+      "relation": "parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "anakin_skywalker",
+      "target": "leia_organa",
+      "relation": "parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "padme_amidala",
+      "target": "luke_skywalker",
+      "relation": "parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "padme_amidala",
+      "target": "leia_organa",
+      "relation": "parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "han_solo",
+      "target": "ben_solo",
+      "relation": "parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "leia_organa",
+      "target": "ben_solo",
+      "relation": "parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "luke_skywalker",
+      "target": "leia_organa",
+      "relation": "sibling_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "leia_organa",
+      "target": "luke_skywalker",
+      "relation": "sibling_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "leia_organa",
+      "target": "han_solo",
+      "relation": "partner_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "bail_organa",
+      "target": "leia_organa",
+      "relation": "adoptive_parent_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "qui_gon_jinn",
+      "target": "obi_wan_kenobi",
+      "relation": "mentor_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "obi_wan_kenobi",
+      "target": "anakin_skywalker",
+      "relation": "mentor_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "yoda",
+      "target": "luke_skywalker",
+      "relation": "mentor_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "anakin_skywalker",
+      "target": "ahsoka_tano",
+      "relation": "mentor_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "luke_skywalker",
+      "target": "ben_solo",
+      "relation": "mentor_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "jedi_order",
+      "target": "light_side",
+      "relation": "aligned_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "sith",
+      "target": "dark_side",
+      "relation": "aligned_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "anakin_skywalker",
+      "target": "jedi_order",
+      "relation": "affiliated_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "darth_vader",
+      "target": "sith",
+      "relation": "affiliated_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "darth_vader",
+      "target": "galactic_empire",
+      "relation": "affiliated_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "palpatine",
+      "target": "galactic_republic",
+      "relation": "led",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "palpatine",
+      "target": "galactic_empire",
+      "relation": "led",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "leia_organa",
+      "target": "rebel_alliance",
+      "relation": "affiliated_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "mon_mothma",
+      "target": "rebel_alliance",
+      "relation": "led",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "lando_calrissian",
+      "target": "rebel_alliance",
+      "relation": "affiliated_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "grand_moff_tarkin",
+      "target": "galactic_empire",
+      "relation": "affiliated_with",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "count_dooku",
+      "target": "separatist_alliance",
+      "relation": "led",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "trade_federation",
+      "target": "separatist_alliance",
+      "relation": "member_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "galactic_senate",
+      "target": "galactic_republic",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "jedi_council",
+      "target": "jedi_order",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "new_republic",
+      "target": "galactic_empire",
+      "relation": "successor_of",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "clone_wars",
+      "target": "galactic_republic",
+      "relation": "involved",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "clone_wars",
+      "target": "jedi_order",
+      "relation": "involved",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "clone_wars",
+      "target": "separatist_alliance",
+      "relation": "opposed",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "order_66",
+      "target": "jedi_order",
+      "relation": "targeted",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "fall_of_republic",
+      "target": "galactic_empire",
+      "relation": "resulted_in",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "battle_of_yavin",
+      "target": "death_star",
+      "relation": "destroyed",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "battle_of_endor",
+      "target": "death_star_ii",
+      "relation": "destroyed",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "battle_of_hoth",
+      "target": "rebel_alliance",
+      "relation": "defeated",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "redemption_of_vader",
+      "target": "darth_vader",
+      "relation": "involved",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "redemption_of_vader",
+      "target": "palpatine",
+      "relation": "opposed",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "redemption_of_vader",
+      "target": "luke_skywalker",
+      "relation": "catalyzed_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "duel_on_mustafar",
+      "target": "anakin_skywalker",
+      "relation": "involved",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "duel_on_mustafar",
+      "target": "obi_wan_kenobi",
+      "relation": "involved",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "anakin_skywalker",
+      "target": "tatooine",
+      "relation": "from",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "luke_skywalker",
+      "target": "tatooine",
+      "relation": "raised_on",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "leia_organa",
+      "target": "alderaan",
+      "relation": "from",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "padme_amidala",
+      "target": "naboo",
+      "relation": "from",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "galactic_republic",
+      "target": "coruscant",
+      "relation": "capital_on",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "galactic_empire",
+      "target": "coruscant",
+      "relation": "capital_on",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "cloud_city",
+      "target": "lando_calrissian",
+      "relation": "administered_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "jabba_the_hutt",
+      "target": "tatooine",
+      "relation": "based_on",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "jedi_order",
+      "target": "sith",
+      "relation": "enemy_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "rebel_alliance",
+      "target": "galactic_empire",
+      "relation": "enemy_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "resistance",
+      "target": "first_order",
+      "relation": "enemy_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "darth_maul",
+      "target": "qui_gon_jinn",
+      "relation": "killed",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "mace_windu",
+      "target": "palpatine",
+      "relation": "attempted_to_arrest",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "boba_fett",
+      "target": "han_solo",
+      "relation": "captured",
+      "confidence": 0.8,
+      "source_type": "manual"
+    },
+    {
+      "source": "han_solo",
+      "target": "jabba_the_hutt",
+      "relation": "indebted_to",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "watto",
+      "target": "anakin_skywalker",
+      "relation": "once_owned",
+      "confidence": 0.9,
+      "source_type": "manual"
+    }
+  ],
+  "metadata": {
+    "the_force": {
+      "type": "concept",
+      "description": "Energy field binding the galaxy",
+      "examples": [
+        "Light Side",
+        "Dark Side"
+      ]
+    },
+    "light_side": {
+      "type": "concept",
+      "description": "Selfless facet of the Force",
+      "examples": [
+        "Jedi"
+      ]
+    },
+    "dark_side": {
+      "type": "concept",
+      "description": "Aggressive facet of the Force",
+      "examples": [
+        "Sith"
+      ]
+    },
+    "jedi_order": {
+      "type": "organization",
+      "description": "Guardians of peace aligned with Light Side",
+      "examples": [
+        "Jedi Council"
+      ]
+    },
+    "jedi_council": {
+      "type": "organization",
+      "description": "Leadership body of the Jedi",
+      "examples": [
+        "Masters"
+      ]
+    },
+    "sith": {
+      "type": "organization",
+      "description": "Dark Side order (Rule of Two)",
+      "examples": [
+        "Sidious",
+        "Vader"
+      ]
+    },
+    "galactic_republic": {
+      "type": "organization",
+      "description": "Democratic government",
+      "examples": [
+        "Senate"
+      ]
+    },
+    "galactic_empire": {
+      "type": "organization",
+      "description": "Authoritarian regime",
+      "examples": [
+        "Emperor"
+      ]
+    },
+    "rebel_alliance": {
+      "type": "organization",
+      "description": "Resistance to the Empire",
+      "examples": []
+    },
+    "resistance": {
+      "type": "organization",
+      "description": "Opposes the First Order",
+      "examples": []
+    },
+    "first_order": {
+      "type": "organization",
+      "description": "Successor to Imperial remnants",
+      "examples": []
+    },
+    "separatist_alliance": {
+      "type": "organization",
+      "description": "Confederacy of Independent Systems",
+      "examples": [
+        "Dooku",
+        "Trade Federation"
+      ]
+    },
+    "trade_federation": {
+      "type": "organization",
+      "description": "Powerful trade guild",
+      "examples": []
+    },
+    "galactic_senate": {
+      "type": "organization",
+      "description": "Legislature of the Republic",
+      "examples": []
+    },
+    "new_republic": {
+      "type": "organization",
+      "description": "Post-Empire government",
+      "examples": []
+    },
+    "anakin_skywalker": {
+      "type": "character",
+      "description": "Jedi Knight; the Chosen One",
+      "examples": []
+    },
+    "darth_vader": {
+      "type": "character",
+      "description": "Sith Lord; Anakin after fall",
+      "examples": []
+    },
+    "padme_amidala": {
+      "type": "character",
+      "description": "Queen/Senator of Naboo",
+      "examples": []
+    },
+    "shmi_skywalker": {
+      "type": "character",
+      "description": "Anakin’s mother",
+      "examples": []
+    },
+    "luke_skywalker": {
+      "type": "character",
+      "description": "Jedi who confronts Vader",
+      "examples": []
+    },
+    "leia_organa": {
+      "type": "character",
+      "description": "Princess/General; leader of Rebels/Resistance",
+      "examples": []
+    },
+    "han_solo": {
+      "type": "character",
+      "description": "Smuggler turned hero",
+      "examples": []
+    },
+    "chewbacca": {
+      "type": "character",
+      "description": "Wookiee warrior",
+      "examples": []
+    },
+    "obi_wan_kenobi": {
+      "type": "character",
+      "description": "Jedi Master; mentor to Anakin and Luke",
+      "examples": []
+    },
+    "qui_gon_jinn": {
+      "type": "character",
+      "description": "Maverick Jedi Master",
+      "examples": []
+    },
+    "yoda": {
+      "type": "character",
+      "description": "Grand Master of the Jedi",
+      "examples": []
+    },
+    "palpatine": {
+      "type": "character",
+      "description": "Senator/Chancellor/Emperor",
+      "examples": []
+    },
+    "darth_sidious": {
+      "type": "character",
+      "description": "Sith identity of Palpatine",
+      "examples": []
+    },
+    "count_dooku": {
+      "type": "character",
+      "description": "Darth Tyranus; Separatist leader",
+      "examples": []
+    },
+    "darth_maul": {
+      "type": "character",
+      "description": "Sith apprentice of Sidious",
+      "examples": []
+    },
+    "ahsoka_tano": {
+      "type": "character",
+      "description": "Anakin’s Padawan",
+      "examples": []
+    },
+    "mace_windu": {
+      "type": "character",
+      "description": "Jedi Master and Council member",
+      "examples": []
+    },
+    "bail_organa": {
+      "type": "character",
+      "description": "Alderaanian senator; Leia’s adoptive father",
+      "examples": []
+    },
+    "lando_calrissian": {
+      "type": "character",
+      "description": "Administrator of Cloud City; Rebel general",
+      "examples": []
+    },
+    "grand_moff_tarkin": {
+      "type": "character",
+      "description": "Imperial governor; Death Star commander",
+      "examples": []
+    },
+    "mon_mothma": {
+      "type": "character",
+      "description": "Leader of the Rebel Alliance",
+      "examples": []
+    },
+    "ben_solo": {
+      "type": "character",
+      "description": "Son of Han and Leia",
+      "examples": []
+    },
+    "kylo_ren": {
+      "type": "character",
+      "description": "Dark-side identity of Ben Solo",
+      "examples": []
+    },
+    "rey": {
+      "type": "character",
+      "description": "Scavenger who becomes a Jedi",
+      "examples": []
+    },
+    "jar_jar_binks": {
+      "type": "character",
+      "description": "Gungan from Naboo",
+      "examples": []
+    },
+    "boba_fett": {
+      "type": "character",
+      "description": "Bounty hunter",
+      "examples": []
+    },
+    "jango_fett": {
+      "type": "character",
+      "description": "Bounty hunter; clone template",
+      "examples": []
+    },
+    "watto": {
+      "type": "character",
+      "description": "Toydarian junk dealer on Tatooine",
+      "examples": []
+    },
+    "jabba_the_hutt": {
+      "type": "character",
+      "description": "Crime lord on Tatooine",
+      "examples": []
+    },
+    "tatooine": {
+      "type": "location",
+      "description": "Desert world of Anakin/Luke",
+      "examples": []
+    },
+    "naboo": {
+      "type": "location",
+      "description": "Homeworld of Padmé",
+      "examples": []
+    },
+    "alderaan": {
+      "type": "location",
+      "description": "Leia’s adopted home; destroyed",
+      "examples": []
+    },
+    "coruscant": {
+      "type": "location",
+      "description": "Ecumenopolis capital",
+      "examples": []
+    },
+    "musta": {
+      "type": "location",
+      "description": "Volcanic duel site",
+      "examples": []
+    },
+    "death_star": {
+      "type": "location",
+      "description": "Imperial battle station",
+      "examples": []
+    },
+    "death_star_ii": {
+      "type": "location",
+      "description": "Second Death Star",
+      "examples": []
+    },
+    "cloud_city": {
+      "type": "location",
+      "description": "Bespin gas mine city",
+      "examples": []
+    },
+    "clone_wars": {
+      "type": "event",
+      "description": "Republic vs Separatists war",
+      "examples": []
+    },
+    "order_66": {
+      "type": "event",
+      "description": "Jedi purge",
+      "examples": []
+    },
+    "fall_of_republic": {
+      "type": "event",
+      "description": "Transition to Empire",
+      "examples": []
+    },
+    "battle_of_yavin": {
+      "type": "event",
+      "description": "Destruction of the first Death Star",
+      "examples": []
+    },
+    "battle_of_hoth": {
+      "type": "event",
+      "description": "Imperial assault on Rebel base",
+      "examples": []
+    },
+    "battle_of_endor": {
+      "type": "event",
+      "description": "Rebel victory; Emperor falls",
+      "examples": []
+    },
+    "duel_on_mustafar": {
+      "type": "event",
+      "description": "Obi-Wan vs Anakin",
+      "examples": []
+    },
+    "redemption_of_vader": {
+      "type": "event",
+      "description": "Vader saves Luke and destroys Sidious",
+      "examples": []
+    }
+  }
+}

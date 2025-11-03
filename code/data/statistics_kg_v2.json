@@ -1,0 +1,1419 @@
+{
+  "nodes": [
+    {
+      "id": "statistics",
+      "metadata": {
+        "type": "concept",
+        "description": "Discipline of data collection, analysis, interpretation, and inference",
+        "examples": [
+          "Descriptive",
+          "Inferential"
+        ]
+      }
+    },
+    {
+      "id": "descriptive_statistics",
+      "metadata": {
+        "type": "concept",
+        "description": "Summarize features of data",
+        "examples": [
+          "mean",
+          "median",
+          "variance"
+        ]
+      }
+    },
+    {
+      "id": "inferential_statistics",
+      "metadata": {
+        "type": "concept",
+        "description": "Generalize from samples to populations",
+        "examples": [
+          "hypothesis tests",
+          "confidence intervals"
+        ]
+      }
+    },
+    {
+      "id": "probability",
+      "metadata": {
+        "type": "concept",
+        "description": "Mathematics of uncertainty",
+        "examples": [
+          "events",
+          "random variables"
+        ]
+      }
+    },
+    {
+      "id": "random_variable",
+      "metadata": {
+        "type": "concept",
+        "description": "Variable determined by chance",
+        "examples": [
+          "X~Bernoulli(p)"
+        ]
+      }
+    },
+    {
+      "id": "discrete_random_variable",
+      "metadata": {
+        "type": "concept",
+        "description": "Takes countable values",
+        "examples": [
+          "Binomial",
+          "Poisson"
+        ]
+      }
+    },
+    {
+      "id": "continuous_random_variable",
+      "metadata": {
+        "type": "concept",
+        "description": "Takes values on a continuum",
+        "examples": [
+          "Normal",
+          "Exponential"
+        ]
+      }
+    },
+    {
+      "id": "probability_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "Mapping from outcomes to probabilities",
+        "examples": [
+          "PMF",
+          "PDF",
+          "CDF"
+        ]
+      }
+    },
+    {
+      "id": "normal_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "N(μ,σ²), bell-shaped",
+        "examples": [
+          "heights",
+          "errors"
+        ]
+      }
+    },
+    {
+      "id": "binomial_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "#successes in n Bernoulli trials",
+        "examples": [
+          "quality control"
+        ]
+      }
+    },
+    {
+      "id": "poisson_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "Counts in fixed interval",
+        "examples": [
+          "arrivals per hour"
+        ]
+      }
+    },
+    {
+      "id": "exponential_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "Waiting times, memoryless",
+        "examples": [
+          "time between arrivals"
+        ]
+      }
+    },
+    {
+      "id": "uniform_distribution",
+      "metadata": {
+        "type": "concept",
+        "description": "All values equally likely on interval",
+        "examples": [
+          "U(0,1)"
+        ]
+      }
+    },
+    {
+      "id": "mean",
+      "metadata": {
+        "type": "concept",
+        "description": "Arithmetic average",
+        "examples": [
+          "x̄"
+        ]
+      }
+    },
+    {
+      "id": "median",
+      "metadata": {
+        "type": "concept",
+        "description": "Middle ordered value",
+        "examples": [
+          "50th percentile"
+        ]
+      }
+    },
+    {
+      "id": "mode",
+      "metadata": {
+        "type": "concept",
+        "description": "Most frequent value",
+        "examples": [
+          "bimodal data"
+        ]
+      }
+    },
+    {
+      "id": "variance",
+      "metadata": {
+        "type": "concept",
+        "description": "Expected squared deviation",
+        "examples": [
+          "σ²"
+        ]
+      }
+    },
+    {
+      "id": "standard_deviation",
+      "metadata": {
+        "type": "concept",
+        "description": "√variance",
+        "examples": [
+          "σ"
+        ]
+      }
+    },
+    {
+      "id": "covariance",
+      "metadata": {
+        "type": "concept",
+        "description": "Joint variability of X and Y",
+        "examples": [
+          "Cov(X,Y)"
+        ]
+      }
+    },
+    {
+      "id": "correlation",
+      "metadata": {
+        "type": "concept",
+        "description": "Scaled covariance in [-1,1]",
+        "examples": [
+          "Pearson r"
+        ]
+      }
+    },
+    {
+      "id": "regression",
+      "metadata": {
+        "type": "concept",
+        "description": "Model relationships",
+        "examples": [
+          "linear",
+          "logistic"
+        ]
+      }
+    },
+    {
+      "id": "linear_regression",
+      "metadata": {
+        "type": "concept",
+        "description": "y=β0+β1x+ε",
+        "examples": [
+          "OLS"
+        ]
+      }
+    },
+    {
+      "id": "logistic_regression",
+      "metadata": {
+        "type": "concept",
+        "description": "P(Y=1|x)=σ(β·x)",
+        "examples": [
+          "classification"
+        ]
+      }
+    },
+    {
+      "id": "hypothesis_test",
+      "metadata": {
+        "type": "concept",
+        "description": "Assess evidence vs null hypothesis",
+        "examples": [
+          "t-test",
+          "χ²"
+        ]
+      }
+    },
+    {
+      "id": "null_hypothesis",
+      "metadata": {
+        "type": "concept",
+        "description": "Baseline assumption",
+        "examples": [
+          "μ=μ0"
+        ]
+      }
+    },
+    {
+      "id": "alternative_hypothesis",
+      "metadata": {
+        "type": "concept",
+        "description": "Competing claim",
+        "examples": [
+          "μ≠μ0"
+        ]
+      }
+    },
+    {
+      "id": "p_value",
+      "metadata": {
+        "type": "concept",
+        "description": "Extremeness under H0",
+        "examples": [
+          "p=0.03"
+        ]
+      }
+    },
+    {
+      "id": "type_I_error",
+      "metadata": {
+        "type": "concept",
+        "description": "False positive rate α",
+        "examples": [
+          "reject true H0"
+        ]
+      }
+    },
+    {
+      "id": "type_II_error",
+      "metadata": {
+        "type": "concept",
+        "description": "False negative rate β",
+        "examples": [
+          "fail to reject false H0"
+        ]
+      }
+    },
+    {
+      "id": "power",
+      "metadata": {
+        "type": "concept",
+        "description": "1-β: probability to detect effect",
+        "examples": [
+          "power analysis"
+        ]
+      }
+    },
+    {
+      "id": "effect_size",
+      "metadata": {
+        "type": "concept",
+        "description": "Magnitude of difference",
+        "examples": [
+          "Cohen's d",
+          "odds ratio"
+        ]
+      }
+    },
+    {
+      "id": "confidence_interval",
+      "metadata": {
+        "type": "concept",
+        "description": "Range likely to contain parameter",
+        "examples": [
+          "95% CI"
+        ]
+      }
+    },
+    {
+      "id": "central_limit_theorem",
+      "metadata": {
+        "type": "concept",
+        "description": "Sampling mean tends to normal",
+        "examples": [
+          "large n"
+        ]
+      }
+    },
+    {
+      "id": "law_of_large_numbers",
+      "metadata": {
+        "type": "concept",
+        "description": "Sample mean→E[X]",
+        "examples": [
+          "n→∞"
+        ]
+      }
+    },
+    {
+      "id": "likelihood",
+      "metadata": {
+        "type": "concept",
+        "description": "Function of parameters given data",
+        "examples": [
+          "L(θ|x)"
+        ]
+      }
+    },
+    {
+      "id": "maximum_likelihood_estimation",
+      "metadata": {
+        "type": "concept",
+        "description": "Choose θ maximizing L",
+        "examples": [
+          "MLE"
+        ]
+      }
+    },
+    {
+      "id": "bayes_theorem",
+      "metadata": {
+        "type": "equation",
+        "description": "P(A|B)=P(B|A)P(A)/P(B)",
+        "examples": [
+          "posterior update"
+        ]
+      }
+    },
+    {
+      "id": "prior",
+      "metadata": {
+        "type": "concept",
+        "description": "Belief before data",
+        "examples": [
+          "Beta prior"
+        ]
+      }
+    },
+    {
+      "id": "posterior",
+      "metadata": {
+        "type": "concept",
+        "description": "Updated belief after data",
+        "examples": [
+          "Beta posterior"
+        ]
+      }
+    },
+    {
+      "id": "conditional_probability",
+      "metadata": {
+        "type": "concept",
+        "description": "P(A|B)",
+        "examples": [
+          "disease testing"
+        ]
+      }
+    },
+    {
+      "id": "t_test",
+      "metadata": {
+        "type": "concept",
+        "description": "Compare means via t",
+        "examples": [
+          "one/two-sample"
+        ]
+      }
+    },
+    {
+      "id": "z_test",
+      "metadata": {
+        "type": "concept",
+        "description": "Test using normal z",
+        "examples": [
+          "known σ"
+        ]
+      }
+    },
+    {
+      "id": "anova",
+      "metadata": {
+        "type": "concept",
+        "description": "Compare >2 means",
+        "examples": [
+          "F-test"
+        ]
+      }
+    },
+    {
+      "id": "nonparametric_tests",
+      "metadata": {
+        "type": "concept",
+        "description": "Distribution-free tests",
+        "examples": [
+          "Mann-Whitney",
+          "Kruskal-Wallis"
+        ]
+      }
+    },
+    {
+      "id": "bootstrap",
+      "metadata": {
+        "type": "concept",
+        "description": "Resampling with replacement",
+        "examples": [
+          "CI by bootstrap"
+        ]
+      }
+    },
+    {
+      "id": "cross_validation",
+      "metadata": {
+        "type": "concept",
+        "description": "Estimate generalization by CV",
+        "examples": [
+          "k-fold"
+        ]
+      }
+    },
+    {
+      "id": "overfitting",
+      "metadata": {
+        "type": "concept",
+        "description": "Fits noise",
+        "examples": [
+          "too complex model"
+        ]
+      }
+    },
+    {
+      "id": "underfitting",
+      "metadata": {
+        "type": "concept",
+        "description": "Too simple model",
+        "examples": [
+          "high bias"
+        ]
+      }
+    },
+    {
+      "id": "bias_variance_tradeoff",
+      "metadata": {
+        "type": "concept",
+        "description": "Balance bias and variance",
+        "examples": [
+          "model selection"
+        ]
+      }
+    },
+    {
+      "id": "roc_curve",
+      "metadata": {
+        "type": "concept",
+        "description": "TPR vs FPR curve",
+        "examples": [
+          "classification"
+        ]
+      }
+    },
+    {
+      "id": "auc",
+      "metadata": {
+        "type": "concept",
+        "description": "Area under ROC",
+        "examples": [
+          "model comparison"
+        ]
+      }
+    },
+    {
+      "id": "confusion_matrix",
+      "metadata": {
+        "type": "concept",
+        "description": "TP, FP, TN, FN table",
+        "examples": [
+          "binary classification"
+        ]
+      }
+    },
+    {
+      "id": "classification_metrics",
+      "metadata": {
+        "type": "concept",
+        "description": "Measures for evaluating classifiers",
+        "examples": [
+          "ROC, AUC, F1"
+        ]
+      }
+    },
+    {
+      "id": "classification",
+      "metadata": {
+        "type": "concept",
+        "description": "Assign labels to instances",
+        "examples": [
+          "binary classification"
+        ]
+      }
+    },
+    {
+      "id": "sampling",
+      "metadata": {
+        "type": "concept",
+        "description": "Select subset from population",
+        "examples": [
+          "SRS",
+          "stratified"
+        ]
+      }
+    },
+    {
+      "id": "stratified_sampling",
+      "metadata": {
+        "type": "concept",
+        "description": "Sample within strata",
+        "examples": [
+          "by age group"
+        ]
+      }
+    },
+    {
+      "id": "cluster_sampling",
+      "metadata": {
+        "type": "concept",
+        "description": "Sample clusters first",
+        "examples": [
+          "schools, classes"
+        ]
+      }
+    },
+    {
+      "id": "population",
+      "metadata": {
+        "type": "concept",
+        "description": "Group of interest",
+        "examples": [
+          "all voters"
+        ]
+      }
+    },
+    {
+      "id": "sample",
+      "metadata": {
+        "type": "concept",
+        "description": "Subset observed",
+        "examples": [
+          "survey respondents"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "descriptive_statistics",
+      "target": "statistics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "inferential_statistics",
+      "target": "statistics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "random_variable",
+      "target": "probability",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "discrete_random_variable",
+      "target": "random_variable",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "continuous_random_variable",
+      "target": "random_variable",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "random_variable",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "normal_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "binomial_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "poisson_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "exponential_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "uniform_distribution",
+      "target": "probability_distribution",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "mean",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "median",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "mode",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "variance",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "standard_deviation",
+      "target": "descriptive_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "correlation",
+      "target": "regression",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "covariance",
+      "target": "correlation",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "linear_regression",
+      "target": "regression",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "logistic_regression",
+      "target": "regression",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "hypothesis_test",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "null_hypothesis",
+      "target": "hypothesis_test",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "alternative_hypothesis",
+      "target": "hypothesis_test",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "p_value",
+      "target": "hypothesis_test",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "confidence_interval",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "central_limit_theorem",
+      "target": "hypothesis_test",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "law_of_large_numbers",
+      "target": "confidence_interval",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "likelihood",
+      "target": "maximum_likelihood_estimation",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "maximum_likelihood_estimation",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "bayes_theorem",
+      "target": "conditional_probability",
+      "relation": "has_equation",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "prior",
+      "target": "bayes_theorem",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "posterior",
+      "target": "bayes_theorem",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "t_test",
+      "target": "hypothesis_test",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "z_test",
+      "target": "hypothesis_test",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "anova",
+      "target": "hypothesis_test",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "nonparametric_tests",
+      "target": "hypothesis_test",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "bootstrap",
+      "target": "confidence_interval",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "cross_validation",
+      "target": "regression",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "overfitting",
+      "target": "cross_validation",
+      "relation": "mitigated_by",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "underfitting",
+      "target": "bias_variance_tradeoff",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "overfitting",
+      "target": "bias_variance_tradeoff",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "roc_curve",
+      "target": "classification_metrics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "auc",
+      "target": "classification_metrics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "confusion_matrix",
+      "target": "classification_metrics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "classification_metrics",
+      "target": "classification",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "type_I_error",
+      "target": "confusion_matrix",
+      "relation": "related_to",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "type_II_error",
+      "target": "confusion_matrix",
+      "relation": "related_to",
+      "confidence": 0.9,
+      "source_type": "manual"
+    },
+    {
+      "source": "power",
+      "target": "type_II_error",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "effect_size",
+      "target": "power",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "sampling",
+      "target": "inferential_statistics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "sample",
+      "target": "sampling",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "stratified_sampling",
+      "target": "sampling",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "cluster_sampling",
+      "target": "sampling",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "population",
+      "target": "sample",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    }
+  ],
+  "metadata": {
+    "statistics": {
+      "type": "concept",
+      "description": "Discipline of data collection, analysis, interpretation, and inference",
+      "examples": [
+        "Descriptive",
+        "Inferential"
+      ]
+    },
+    "descriptive_statistics": {
+      "type": "concept",
+      "description": "Summarize features of data",
+      "examples": [
+        "mean",
+        "median",
+        "variance"
+      ]
+    },
+    "inferential_statistics": {
+      "type": "concept",
+      "description": "Generalize from samples to populations",
+      "examples": [
+        "hypothesis tests",
+        "confidence intervals"
+      ]
+    },
+    "probability": {
+      "type": "concept",
+      "description": "Mathematics of uncertainty",
+      "examples": [
+        "events",
+        "random variables"
+      ]
+    },
+    "random_variable": {
+      "type": "concept",
+      "description": "Variable determined by chance",
+      "examples": [
+        "X~Bernoulli(p)"
+      ]
+    },
+    "discrete_random_variable": {
+      "type": "concept",
+      "description": "Takes countable values",
+      "examples": [
+        "Binomial",
+        "Poisson"
+      ]
+    },
+    "continuous_random_variable": {
+      "type": "concept",
+      "description": "Takes values on a continuum",
+      "examples": [
+        "Normal",
+        "Exponential"
+      ]
+    },
+    "probability_distribution": {
+      "type": "concept",
+      "description": "Mapping from outcomes to probabilities",
+      "examples": [
+        "PMF",
+        "PDF",
+        "CDF"
+      ]
+    },
+    "normal_distribution": {
+      "type": "concept",
+      "description": "N(μ,σ²), bell-shaped",
+      "examples": [
+        "heights",
+        "errors"
+      ]
+    },
+    "binomial_distribution": {
+      "type": "concept",
+      "description": "#successes in n Bernoulli trials",
+      "examples": [
+        "quality control"
+      ]
+    },
+    "poisson_distribution": {
+      "type": "concept",
+      "description": "Counts in fixed interval",
+      "examples": [
+        "arrivals per hour"
+      ]
+    },
+    "exponential_distribution": {
+      "type": "concept",
+      "description": "Waiting times, memoryless",
+      "examples": [
+        "time between arrivals"
+      ]
+    },
+    "uniform_distribution": {
+      "type": "concept",
+      "description": "All values equally likely on interval",
+      "examples": [
+        "U(0,1)"
+      ]
+    },
+    "mean": {
+      "type": "concept",
+      "description": "Arithmetic average",
+      "examples": [
+        "x̄"
+      ]
+    },
+    "median": {
+      "type": "concept",
+      "description": "Middle ordered value",
+      "examples": [
+        "50th percentile"
+      ]
+    },
+    "mode": {
+      "type": "concept",
+      "description": "Most frequent value",
+      "examples": [
+        "bimodal data"
+      ]
+    },
+    "variance": {
+      "type": "concept",
+      "description": "Expected squared deviation",
+      "examples": [
+        "σ²"
+      ]
+    },
+    "standard_deviation": {
+      "type": "concept",
+      "description": "√variance",
+      "examples": [
+        "σ"
+      ]
+    },
+    "covariance": {
+      "type": "concept",
+      "description": "Joint variability of X and Y",
+      "examples": [
+        "Cov(X,Y)"
+      ]
+    },
+    "correlation": {
+      "type": "concept",
+      "description": "Scaled covariance in [-1,1]",
+      "examples": [
+        "Pearson r"
+      ]
+    },
+    "regression": {
+      "type": "concept",
+      "description": "Model relationships",
+      "examples": [
+        "linear",
+        "logistic"
+      ]
+    },
+    "linear_regression": {
+      "type": "concept",
+      "description": "y=β0+β1x+ε",
+      "examples": [
+        "OLS"
+      ]
+    },
+    "logistic_regression": {
+      "type": "concept",
+      "description": "P(Y=1|x)=σ(β·x)",
+      "examples": [
+        "classification"
+      ]
+    },
+    "hypothesis_test": {
+      "type": "concept",
+      "description": "Assess evidence vs null hypothesis",
+      "examples": [
+        "t-test",
+        "χ²"
+      ]
+    },
+    "null_hypothesis": {
+      "type": "concept",
+      "description": "Baseline assumption",
+      "examples": [
+        "μ=μ0"
+      ]
+    },
+    "alternative_hypothesis": {
+      "type": "concept",
+      "description": "Competing claim",
+      "examples": [
+        "μ≠μ0"
+      ]
+    },
+    "p_value": {
+      "type": "concept",
+      "description": "Extremeness under H0",
+      "examples": [
+        "p=0.03"
+      ]
+    },
+    "type_I_error": {
+      "type": "concept",
+      "description": "False positive rate α",
+      "examples": [
+        "reject true H0"
+      ]
+    },
+    "type_II_error": {
+      "type": "concept",
+      "description": "False negative rate β",
+      "examples": [
+        "fail to reject false H0"
+      ]
+    },
+    "power": {
+      "type": "concept",
+      "description": "1-β: probability to detect effect",
+      "examples": [
+        "power analysis"
+      ]
+    },
+    "effect_size": {
+      "type": "concept",
+      "description": "Magnitude of difference",
+      "examples": [
+        "Cohen's d",
+        "odds ratio"
+      ]
+    },
+    "confidence_interval": {
+      "type": "concept",
+      "description": "Range likely to contain parameter",
+      "examples": [
+        "95% CI"
+      ]
+    },
+    "central_limit_theorem": {
+      "type": "concept",
+      "description": "Sampling mean tends to normal",
+      "examples": [
+        "large n"
+      ]
+    },
+    "law_of_large_numbers": {
+      "type": "concept",
+      "description": "Sample mean→E[X]",
+      "examples": [
+        "n→∞"
+      ]
+    },
+    "likelihood": {
+      "type": "concept",
+      "description": "Function of parameters given data",
+      "examples": [
+        "L(θ|x)"
+      ]
+    },
+    "maximum_likelihood_estimation": {
+      "type": "concept",
+      "description": "Choose θ maximizing L",
+      "examples": [
+        "MLE"
+      ]
+    },
+    "bayes_theorem": {
+      "type": "equation",
+      "description": "P(A|B)=P(B|A)P(A)/P(B)",
+      "examples": [
+        "posterior update"
+      ]
+    },
+    "prior": {
+      "type": "concept",
+      "description": "Belief before data",
+      "examples": [
+        "Beta prior"
+      ]
+    },
+    "posterior": {
+      "type": "concept",
+      "description": "Updated belief after data",
+      "examples": [
+        "Beta posterior"
+      ]
+    },
+    "conditional_probability": {
+      "type": "concept",
+      "description": "P(A|B)",
+      "examples": [
+        "disease testing"
+      ]
+    },
+    "t_test": {
+      "type": "concept",
+      "description": "Compare means via t",
+      "examples": [
+        "one/two-sample"
+      ]
+    },
+    "z_test": {
+      "type": "concept",
+      "description": "Test using normal z",
+      "examples": [
+        "known σ"
+      ]
+    },
+    "anova": {
+      "type": "concept",
+      "description": "Compare >2 means",
+      "examples": [
+        "F-test"
+      ]
+    },
+    "nonparametric_tests": {
+      "type": "concept",
+      "description": "Distribution-free tests",
+      "examples": [
+        "Mann-Whitney",
+        "Kruskal-Wallis"
+      ]
+    },
+    "bootstrap": {
+      "type": "concept",
+      "description": "Resampling with replacement",
+      "examples": [
+        "CI by bootstrap"
+      ]
+    },
+    "cross_validation": {
+      "type": "concept",
+      "description": "Estimate generalization by CV",
+      "examples": [
+        "k-fold"
+      ]
+    },
+    "overfitting": {
+      "type": "concept",
+      "description": "Fits noise",
+      "examples": [
+        "too complex model"
+      ]
+    },
+    "underfitting": {
+      "type": "concept",
+      "description": "Too simple model",
+      "examples": [
+        "high bias"
+      ]
+    },
+    "bias_variance_tradeoff": {
+      "type": "concept",
+      "description": "Balance bias and variance",
+      "examples": [
+        "model selection"
+      ]
+    },
+    "roc_curve": {
+      "type": "concept",
+      "description": "TPR vs FPR curve",
+      "examples": [
+        "classification"
+      ]
+    },
+    "auc": {
+      "type": "concept",
+      "description": "Area under ROC",
+      "examples": [
+        "model comparison"
+      ]
+    },
+    "confusion_matrix": {
+      "type": "concept",
+      "description": "TP, FP, TN, FN table",
+      "examples": [
+        "binary classification"
+      ]
+    },
+    "classification_metrics": {
+      "type": "concept",
+      "description": "Measures for evaluating classifiers",
+      "examples": [
+        "ROC, AUC, F1"
+      ]
+    },
+    "classification": {
+      "type": "concept",
+      "description": "Assign labels to instances",
+      "examples": [
+        "binary classification"
+      ]
+    },
+    "sampling": {
+      "type": "concept",
+      "description": "Select subset from population",
+      "examples": [
+        "SRS",
+        "stratified"
+      ]
+    },
+    "stratified_sampling": {
+      "type": "concept",
+      "description": "Sample within strata",
+      "examples": [
+        "by age group"
+      ]
+    },
+    "cluster_sampling": {
+      "type": "concept",
+      "description": "Sample clusters first",
+      "examples": [
+        "schools, classes"
+      ]
+    },
+    "population": {
+      "type": "concept",
+      "description": "Group of interest",
+      "examples": [
+        "all voters"
+      ]
+    },
+    "sample": {
+      "type": "concept",
+      "description": "Subset observed",
+      "examples": [
+        "survey respondents"
+      ]
+    }
+  }
+}

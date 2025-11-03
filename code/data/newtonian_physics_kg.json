@@ -1,0 +1,846 @@
+{
+  "nodes": [
+    {
+      "id": "kinematics",
+      "metadata": {
+        "type": "concept",
+        "description": "Description of motion without regard to its causes",
+        "examples": [
+          "Displacement, velocity, acceleration"
+        ]
+      }
+    },
+    {
+      "id": "classical_mechanics",
+      "metadata": {
+        "type": "concept",
+        "description": "Branch of physics dealing with motion of bodies under forces",
+        "examples": [
+          "Motion of projectiles",
+          "Planetary orbits (approx.)"
+        ]
+      }
+    },
+    {
+      "id": "dynamics",
+      "metadata": {
+        "type": "concept",
+        "description": "Study of forces and why motion occurs",
+        "examples": [
+          "Forces causing acceleration"
+        ]
+      }
+    },
+    {
+      "id": "newtons_laws",
+      "metadata": {
+        "type": "concept",
+        "description": "Three fundamental laws describing motion and forces",
+        "examples": [
+          "Inertia",
+          "F=ma",
+          "Action-reaction"
+        ]
+      }
+    },
+    {
+      "id": "newtons_first_law",
+      "metadata": {
+        "type": "concept",
+        "description": "A body remains at rest or in uniform motion unless acted upon by a net force",
+        "examples": [
+          "Inertia"
+        ]
+      }
+    },
+    {
+      "id": "newtons_second_law",
+      "metadata": {
+        "type": "equation",
+        "description": "F = m a",
+        "examples": [
+          "Net force causing acceleration"
+        ]
+      }
+    },
+    {
+      "id": "newtons_third_law",
+      "metadata": {
+        "type": "concept",
+        "description": "For every action there is an equal and opposite reaction",
+        "examples": [
+          "Recoil of a gun"
+        ]
+      }
+    },
+    {
+      "id": "force",
+      "metadata": {
+        "type": "concept",
+        "description": "Interaction that changes motion",
+        "examples": [
+          "Push or pull"
+        ]
+      }
+    },
+    {
+      "id": "acceleration",
+      "metadata": {
+        "type": "concept",
+        "description": "Rate of change of velocity",
+        "examples": [
+          "m/s\u00b2"
+        ]
+      }
+    },
+    {
+      "id": "velocity",
+      "metadata": {
+        "type": "concept",
+        "description": "Rate of change of displacement",
+        "examples": [
+          "m/s"
+        ]
+      }
+    },
+    {
+      "id": "displacement",
+      "metadata": {
+        "type": "concept",
+        "description": "Vector from initial to final position",
+        "examples": [
+          "\u0394x"
+        ]
+      }
+    },
+    {
+      "id": "vector_equation",
+      "metadata": {
+        "type": "concept",
+        "description": "Equation involving vectors",
+        "examples": [
+          "F=ma, p=mv as vectors"
+        ]
+      }
+    },
+    {
+      "id": "universal_gravitation",
+      "metadata": {
+        "type": "equation",
+        "description": "F = G m\u2081 m\u2082 / r\u00b2",
+        "examples": [
+          "Planetary attraction"
+        ]
+      }
+    },
+    {
+      "id": "inverse_square_law",
+      "metadata": {
+        "type": "concept",
+        "description": "Strength decreases with square of distance",
+        "examples": [
+          "Gravity, electrostatics (classically)"
+        ]
+      }
+    },
+    {
+      "id": "gravitational_force",
+      "metadata": {
+        "type": "concept",
+        "description": "Attractive force between masses",
+        "examples": [
+          "Weight near Earth"
+        ]
+      }
+    },
+    {
+      "id": "inertia",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    },
+    {
+      "id": "mass",
+      "metadata": {
+        "type": "concept",
+        "description": "Measure of inertia",
+        "examples": [
+          "kg"
+        ]
+      }
+    },
+    {
+      "id": "momentum",
+      "metadata": {
+        "type": "concept",
+        "description": "Product of mass and velocity p = m v",
+        "examples": [
+          "Conservation in collisions"
+        ]
+      }
+    },
+    {
+      "id": "impulse",
+      "metadata": {
+        "type": "concept",
+        "description": "Change in momentum due to a force over time",
+        "examples": [
+          "J = \u222bF dt"
+        ]
+      }
+    },
+    {
+      "id": "work",
+      "metadata": {
+        "type": "concept",
+        "description": "Energy transfer via force along displacement",
+        "examples": [
+          "W = \u222bF\u00b7dx"
+        ]
+      }
+    },
+    {
+      "id": "energy",
+      "metadata": {
+        "type": "concept",
+        "description": "Capacity to do work",
+        "examples": [
+          "Joules"
+        ]
+      }
+    },
+    {
+      "id": "kinetic_energy",
+      "metadata": {
+        "type": "concept",
+        "description": "Energy of motion KE = \u00bd m v\u00b2",
+        "examples": [
+          "Moving car"
+        ]
+      }
+    },
+    {
+      "id": "potential_energy",
+      "metadata": {
+        "type": "concept",
+        "description": "Stored energy due to position or configuration",
+        "examples": [
+          "Gravitational, elastic"
+        ]
+      }
+    },
+    {
+      "id": "gravitational_potential_energy",
+      "metadata": {
+        "type": "concept",
+        "description": "U = m g h (near Earth)",
+        "examples": [
+          "Raised object"
+        ]
+      }
+    },
+    {
+      "id": "power",
+      "metadata": {
+        "type": "concept",
+        "description": "Rate of doing work P = dW/dt",
+        "examples": [
+          "Watts"
+        ]
+      }
+    },
+    {
+      "id": "friction",
+      "metadata": {
+        "type": "concept",
+        "description": "Force resisting relative motion",
+        "examples": [
+          "Kinetic, static friction"
+        ]
+      }
+    },
+    {
+      "id": "normal_force",
+      "metadata": {
+        "type": "concept",
+        "description": "Support force perpendicular to a surface",
+        "examples": [
+          "Contact force"
+        ]
+      }
+    },
+    {
+      "id": "tension",
+      "metadata": {
+        "type": "concept",
+        "description": "Pulling force transmitted by a string/rope",
+        "examples": [
+          "Mass-spring system"
+        ]
+      }
+    },
+    {
+      "id": "kinematic_equations",
+      "metadata": {
+        "type": "equation",
+        "description": "v = v\u2080 + a t; x = x\u2080 + v\u2080 t + \u00bd a t\u00b2; v\u00b2 = v\u2080\u00b2 + 2 a \u0394x",
+        "examples": [
+          "Constant-acceleration motion"
+        ]
+      }
+    },
+    {
+      "id": "conservation_of_momentum",
+      "metadata": {
+        "type": "concept",
+        "description": "Total momentum of an isolated system is conserved",
+        "examples": [
+          "Elastic collisions"
+        ]
+      }
+    },
+    {
+      "id": "conservation_of_energy",
+      "metadata": {
+        "type": "concept",
+        "description": "Total energy of an isolated system is conserved",
+        "examples": [
+          "Pendulum (ideal)"
+        ]
+      }
+    },
+    {
+      "id": "torque",
+      "metadata": {
+        "type": "concept",
+        "description": "Rotational analog of force \u03c4 = r\u00d7F",
+        "examples": [
+          "Wrench turning a bolt"
+        ]
+      }
+    },
+    {
+      "id": "rotational_dynamics",
+      "metadata": {
+        "type": "concept",
+        "description": "Dynamics of rotating bodies",
+        "examples": [
+          "Angular acceleration"
+        ]
+      }
+    },
+    {
+      "id": "calculus",
+      "metadata": {
+        "type": "concept",
+        "description": "Mathematical tool for rates and accumulations",
+        "examples": [
+          "Derivatives and integrals"
+        ]
+      }
+    },
+    {
+      "id": "angular_momentum",
+      "metadata": {
+        "type": "concept",
+        "description": "",
+        "examples": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "kinematics",
+      "target": "classical_mechanics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "dynamics",
+      "target": "classical_mechanics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "newtons_laws",
+      "target": "dynamics",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "newtons_first_law",
+      "target": "newtons_laws",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "newtons_second_law",
+      "target": "newtons_laws",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "newtons_second_law",
+      "target": "vector_equation",
+      "relation": "has_equation",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "newtons_third_law",
+      "target": "newtons_laws",
+      "relation": "part_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "force",
+      "target": "dynamics",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "force",
+      "target": "acceleration",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "acceleration",
+      "target": "kinematics",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "acceleration",
+      "target": "velocity",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "velocity",
+      "target": "kinematics",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "velocity",
+      "target": "displacement",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "displacement",
+      "target": "kinematics",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "universal_gravitation",
+      "target": "inverse_square_law",
+      "relation": "has_equation",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "gravitational_force",
+      "target": "universal_gravitation",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "gravitational_force",
+      "target": "force",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "inertia",
+      "target": "mass",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "momentum",
+      "target": "impulse",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "work",
+      "target": "energy",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "kinetic_energy",
+      "target": "energy",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "potential_energy",
+      "target": "energy",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "gravitational_potential_energy",
+      "target": "potential_energy",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "power",
+      "target": "work",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "friction",
+      "target": "normal_force",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "normal_force",
+      "target": "force",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "tension",
+      "target": "force",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "kinematic_equations",
+      "target": "kinematics",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "conservation_of_momentum",
+      "target": "momentum",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "conservation_of_energy",
+      "target": "energy",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "torque",
+      "target": "rotational_dynamics",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "rotational_dynamics",
+      "target": "dynamics",
+      "relation": "is_a",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "calculus",
+      "target": "kinematics",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "calculus",
+      "target": "dynamics",
+      "relation": "prerequisite_of",
+      "confidence": 1.0,
+      "source_type": "manual"
+    },
+    {
+      "source": "angular_momentum",
+      "target": "momentum",
+      "relation": "related_to",
+      "confidence": 1.0,
+      "source_type": "manual"
+    }
+  ],
+  "metadata": {
+    "classical_mechanics": {
+      "type": "concept",
+      "description": "Branch of physics dealing with motion of bodies under forces",
+      "examples": [
+        "Motion of projectiles",
+        "Planetary orbits (approx.)"
+      ]
+    },
+    "kinematics": {
+      "type": "concept",
+      "description": "Description of motion without regard to its causes",
+      "examples": [
+        "Displacement, velocity, acceleration"
+      ]
+    },
+    "dynamics": {
+      "type": "concept",
+      "description": "Study of forces and why motion occurs",
+      "examples": [
+        "Forces causing acceleration"
+      ]
+    },
+    "newtons_laws": {
+      "type": "concept",
+      "description": "Three fundamental laws describing motion and forces",
+      "examples": [
+        "Inertia",
+        "F=ma",
+        "Action-reaction"
+      ]
+    },
+    "newtons_first_law": {
+      "type": "concept",
+      "description": "A body remains at rest or in uniform motion unless acted upon by a net force",
+      "examples": [
+        "Inertia"
+      ]
+    },
+    "newtons_second_law": {
+      "type": "equation",
+      "description": "F = m a",
+      "examples": [
+        "Net force causing acceleration"
+      ]
+    },
+    "newtons_third_law": {
+      "type": "concept",
+      "description": "For every action there is an equal and opposite reaction",
+      "examples": [
+        "Recoil of a gun"
+      ]
+    },
+    "force": {
+      "type": "concept",
+      "description": "Interaction that changes motion",
+      "examples": [
+        "Push or pull"
+      ]
+    },
+    "mass": {
+      "type": "concept",
+      "description": "Measure of inertia",
+      "examples": [
+        "kg"
+      ]
+    },
+    "acceleration": {
+      "type": "concept",
+      "description": "Rate of change of velocity",
+      "examples": [
+        "m/s\u00b2"
+      ]
+    },
+    "displacement": {
+      "type": "concept",
+      "description": "Vector from initial to final position",
+      "examples": [
+        "\u0394x"
+      ]
+    },
+    "velocity": {
+      "type": "concept",
+      "description": "Rate of change of displacement",
+      "examples": [
+        "m/s"
+      ]
+    },
+    "momentum": {
+      "type": "concept",
+      "description": "Product of mass and velocity p = m v",
+      "examples": [
+        "Conservation in collisions"
+      ]
+    },
+    "impulse": {
+      "type": "concept",
+      "description": "Change in momentum due to a force over time",
+      "examples": [
+        "J = \u222bF dt"
+      ]
+    },
+    "work": {
+      "type": "concept",
+      "description": "Energy transfer via force along displacement",
+      "examples": [
+        "W = \u222bF\u00b7dx"
+      ]
+    },
+    "energy": {
+      "type": "concept",
+      "description": "Capacity to do work",
+      "examples": [
+        "Joules"
+      ]
+    },
+    "kinetic_energy": {
+      "type": "concept",
+      "description": "Energy of motion KE = \u00bd m v\u00b2",
+      "examples": [
+        "Moving car"
+      ]
+    },
+    "potential_energy": {
+      "type": "concept",
+      "description": "Stored energy due to position or configuration",
+      "examples": [
+        "Gravitational, elastic"
+      ]
+    },
+    "gravitational_potential_energy": {
+      "type": "concept",
+      "description": "U = m g h (near Earth)",
+      "examples": [
+        "Raised object"
+      ]
+    },
+    "power": {
+      "type": "concept",
+      "description": "Rate of doing work P = dW/dt",
+      "examples": [
+        "Watts"
+      ]
+    },
+    "friction": {
+      "type": "concept",
+      "description": "Force resisting relative motion",
+      "examples": [
+        "Kinetic, static friction"
+      ]
+    },
+    "normal_force": {
+      "type": "concept",
+      "description": "Support force perpendicular to a surface",
+      "examples": [
+        "Contact force"
+      ]
+    },
+    "tension": {
+      "type": "concept",
+      "description": "Pulling force transmitted by a string/rope",
+      "examples": [
+        "Mass-spring system"
+      ]
+    },
+    "gravitational_force": {
+      "type": "concept",
+      "description": "Attractive force between masses",
+      "examples": [
+        "Weight near Earth"
+      ]
+    },
+    "universal_gravitation": {
+      "type": "equation",
+      "description": "F = G m\u2081 m\u2082 / r\u00b2",
+      "examples": [
+        "Planetary attraction"
+      ]
+    },
+    "inverse_square_law": {
+      "type": "concept",
+      "description": "Strength decreases with square of distance",
+      "examples": [
+        "Gravity, electrostatics (classically)"
+      ]
+    },
+    "kinematic_equations": {
+      "type": "equation",
+      "description": "v = v\u2080 + a t; x = x\u2080 + v\u2080 t + \u00bd a t\u00b2; v\u00b2 = v\u2080\u00b2 + 2 a \u0394x",
+      "examples": [
+        "Constant-acceleration motion"
+      ]
+    },
+    "conservation_of_momentum": {
+      "type": "concept",
+      "description": "Total momentum of an isolated system is conserved",
+      "examples": [
+        "Elastic collisions"
+      ]
+    },
+    "conservation_of_energy": {
+      "type": "concept",
+      "description": "Total energy of an isolated system is conserved",
+      "examples": [
+        "Pendulum (ideal)"
+      ]
+    },
+    "torque": {
+      "type": "concept",
+      "description": "Rotational analog of force \u03c4 = r\u00d7F",
+      "examples": [
+        "Wrench turning a bolt"
+      ]
+    },
+    "rotational_dynamics": {
+      "type": "concept",
+      "description": "Dynamics of rotating bodies",
+      "examples": [
+        "Angular acceleration"
+      ]
+    },
+    "vector_equation": {
+      "type": "concept",
+      "description": "Equation involving vectors",
+      "examples": [
+        "F=ma, p=mv as vectors"
+      ]
+    },
+    "calculus": {
+      "type": "concept",
+      "description": "Mathematical tool for rates and accumulations",
+      "examples": [
+        "Derivatives and integrals"
+      ]
+    },
+    "inertia": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    },
+    "angular_momentum": {
+      "type": "concept",
+      "description": "",
+      "examples": []
+    }
+  }
+}

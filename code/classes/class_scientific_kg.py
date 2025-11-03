@@ -3,6 +3,12 @@ import json
 from typing import List, Tuple, Optional, Set
 from collections import defaultdict, Counter
 import matplotlib.pyplot as plt
+import warnings
+
+# Suppress matplotlib warnings:
+# - Legend warnings when no labeled artists exist
+# - Axes3D warnings (we don't use 3D plotting)
+warnings.filterwarnings('ignore', category=UserWarning, module='matplotlib')
 
 class ScientificKnowledgeGraph:
     """
@@ -339,6 +345,12 @@ class ScientificKnowledgeGraph:
 
         # Adaptive figure size based on number of nodes
         n_nodes = subgraph.number_of_nodes()
+        if n_nodes == 0:
+            # Empty graph - just show message
+            plt.figure(figsize=figsize)
+            plt.text(0.5, 0.5, 'Empty graph', ha='center', va='center', transform=plt.gca().transAxes)
+            return
+        
         if n_nodes > 0:
             w = max(figsize[0], min(24, 10 + n_nodes * 0.4))
             h = max(figsize[1], min(18, 6 + n_nodes * 0.3))
@@ -347,15 +359,30 @@ class ScientificKnowledgeGraph:
             plt.figure(figsize=figsize)
 
         # Create layout with increased spacing to reduce overlap
-        if n_nodes <= 50 and n_nodes > 1:
-            # Kamada-Kawai spreads small graphs nicely
-            pos = nx.kamada_kawai_layout(subgraph)
-        else:
-            # Tune spring layout: larger k => more spacing
-            import math
-            sqrt_n = math.sqrt(n_nodes) if n_nodes > 0 else 1.0
-            k = 2.0 / sqrt_n + 0.15
-            pos = nx.spring_layout(subgraph, k=k, iterations=300, seed=42)
+        try:
+            if n_nodes == 1:
+                # Single node - place it in the center
+                pos = {list(subgraph.nodes())[0]: (0, 0)}
+            elif n_nodes <= 50 and n_nodes > 1:
+                # Kamada-Kawai spreads small graphs nicely
+                try:
+                    pos = nx.kamada_kawai_layout(subgraph)
+                except (ValueError, Exception) as e:
+                    # Fallback if kamada_kawai fails (e.g., disconnected components)
+                    import math
+                    sqrt_n = math.sqrt(n_nodes) if n_nodes > 0 else 1.0
+                    k = 2.0 / sqrt_n + 0.15
+                    pos = nx.spring_layout(subgraph, k=k, iterations=300, seed=42)
+            else:
+                # Tune spring layout: larger k => more spacing
+                import math
+                sqrt_n = math.sqrt(n_nodes) if n_nodes > 0 else 1.0
+                k = 2.0 / sqrt_n + 0.15
+                pos = nx.spring_layout(subgraph, k=k, iterations=300, seed=42)
+        except Exception as e:
+            # Final fallback: use default spring layout
+            print(f"Warning: Layout algorithm failed, using default spring layout: {e}")
+            pos = nx.spring_layout(subgraph, seed=42)
 
         # Node/label sizing scales with graph size
         node_size = max(600, 3000 - n_nodes * 30)
@@ -379,6 +406,7 @@ class ScientificKnowledgeGraph:
             'has_equation': 'purple'
         }
         
+        has_labeled_edges = False
         for relation in self.relation_types:
             edges = [(u, v) for u, v, d in subgraph.edges(data=True)
                     if d.get('relation') == relation]
@@ -393,6 +421,7 @@ class ScientificKnowledgeGraph:
                     width=max(1.0, 2.5 - n_nodes * 0.02),
                     label=relation
                 )
+                has_labeled_edges = True
         
         # Draw labels
         nx.draw_networkx_labels(
@@ -403,10 +432,20 @@ class ScientificKnowledgeGraph:
         )
         
         plt.margins(0.2)
-        try:
-            plt.legend()
-        except Exception:
-            pass
+        
+        # Only create legend if there are labeled edges
+        # Check for labeled artists before attempting to create legend
+        if has_labeled_edges:
+            try:
+                handles, labels = plt.gca().get_legend_handles_labels()
+                if handles and labels and len(handles) > 0:
+                    plt.legend(handles, labels, loc='best', fontsize=8)
+            except (ValueError, AttributeError):
+                # No labeled artists or legend creation failed - silently skip
+                pass
+            except Exception:
+                # Other errors - silently skip
+                pass
         plt.axis('off')
         plt.tight_layout()
         return plt
