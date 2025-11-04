@@ -8,10 +8,9 @@
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  background: #f7f6f3;
+  background: #ffffff;
   color: #37352f;
   min-height: 100vh;
-  padding: 12px;
   font-size: 14px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -20,52 +19,329 @@ body {
 
 #root {
   width: 100%;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 3px;
-  box-shadow: rgba(15, 15, 15, 0.03) 0px 0px 0px 1px, rgba(15, 15, 15, 0.03) 0px 3px 6px, rgba(15, 15, 15, 0.08) 0px 9px 24px;
+  height: 100vh;
   overflow: hidden;
 }
 
-header {
-  background: white;
-  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-  padding: 12px 20px;
-  text-align: left;
+/* App Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
 }
 
-h1 {
-  font-size: 18px;
+.app-header {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  padding: 8px 14px;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.app-header h1 {
+  font-size: 14px;
   font-weight: 600;
   color: #37352f;
   margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
   letter-spacing: -0.01em;
 }
 
-.subtitle {
+.app-header .subtitle {
   font-size: 12px;
   color: rgba(55, 53, 47, 0.65);
   margin-top: 2px;
   font-weight: 400;
 }
 
-.content {
-  padding: 20px;
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
 }
 
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #f7f6f3;
+  border-right: 1px solid rgba(55, 53, 47, 0.09);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  flex-shrink: 0;
+}
+
+.sidebar-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sidebar-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(55, 53, 47, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex: 1;
+}
+
+.sidebar-add-button {
+  background: transparent;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  color: rgba(55, 53, 47, 0.65);
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.sidebar-add-button:hover {
+  background: rgba(55, 53, 47, 0.06);
+  border-color: rgba(55, 53, 47, 0.2);
+  color: #37352f;
+}
+
+.sidebar-add-button:active {
+  background: rgba(55, 53, 47, 0.1);
+}
+
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+
+.sidebar-empty {
+  padding: 12px;
+  color: rgba(55, 53, 47, 0.4);
+  font-size: 13px;
+  text-align: center;
+}
+
+.sidebar-loading {
+  padding: 12px;
+  color: rgba(55, 53, 47, 0.65);
+  font-size: 13px;
+  text-align: center;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgba(55, 53, 47, 0.8);
+  transition: background 0.15s;
+  min-height: 28px;
+  position: relative;
+}
+
+.file-item:hover {
+  background: rgba(55, 53, 47, 0.06);
+}
+
+.file-item.active {
+  background: rgba(55, 53, 47, 0.08);
+  font-weight: 500;
+  color: #37352f;
+}
+
+.file-item-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.file-item-check {
+  color: rgba(55, 53, 47, 0.6);
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.file-item-menu-button {
+  background: none;
+  border: none;
+  color: rgba(55, 53, 47, 0.4);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+.file-item:hover .file-item-menu-button,
+.file-item.active .file-item-menu-button {
+  opacity: 1;
+}
+
+.file-item-menu-button:hover {
+  background: rgba(55, 53, 47, 0.08);
+  color: rgba(55, 53, 47, 0.6);
+}
+
+.file-item-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(15, 15, 15, 0.1);
+  min-width: 120px;
+  padding: 4px 0;
+  z-index: 1000;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+}
+
+.file-item-menu-option {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: rgba(55, 53, 47, 0.8);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.file-item-menu-option:hover {
+  background: rgba(55, 53, 47, 0.06);
+}
+
+.file-item-menu-option-danger {
+  color: #d83030;
+}
+
+.file-item-menu-option-danger:hover {
+  background: rgba(216, 48, 48, 0.1);
+}
+
+.file-item-rename-input {
+  flex: 1;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #37352f;
+  background: white;
+  outline: none;
+}
+
+.file-item-rename-input:focus {
+  border-color: rgba(46, 170, 220, 0.8);
+  box-shadow: 0 0 0 2px rgba(46, 170, 220, 0.2);
+}
+
+/* Tabs */
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  background: #ffffff;
+  padding: 0 1px;
+  flex-shrink: 0;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(55, 53, 47, 0.65);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+  font-family: inherit;
+  position: relative;
+  margin-bottom: -1px;
+}
+
+.tab-button:hover {
+  color: #37352f;
+  background: rgba(55, 53, 47, 0.03);
+}
+
+.tab-button.active {
+  color: #37352f;
+  border-bottom-color: #37352f;
+}
+
+.tabs-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+  background: #ffffff;
+}
+
+.tab-page {
+  padding: 16px;
+  height: 100%;
+  overflow-y: auto;
+  background: #ffffff;
+}
+
+/* Content Styles */
 .panel {
   background: white;
   padding: 12px 16px;
-  border-radius: 3px;
-  margin-bottom: 12px;
-  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
 
 .panel h2 {
@@ -78,9 +354,10 @@ h1 {
 .query-section {
   background: white;
   padding: 16px;
-  border-radius: 3px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
 
 .query-section h2 {
@@ -151,8 +428,8 @@ button:disabled {
 .results {
   background: white;
   padding: 12px;
-  border-radius: 3px;
-  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-radius: 0;
+  border: none;
   min-height: 60px;
 }
 
@@ -195,6 +472,8 @@ button:disabled {
   border: 1px solid rgba(55, 53, 47, 0.09);
 }
 
+/* Predicate tags now use .predicate-tag class (defined below) */
+
 .path-arrow {
   color: rgba(55, 53, 47, 0.65);
   font-weight: 500;
@@ -207,6 +486,8 @@ button:disabled {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 12px;
   margin-bottom: 20px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
 
 .stat-card {
@@ -289,8 +570,8 @@ button:disabled {
   padding: 20px;
   background: white;
   margin-top: 0;
-  border: 1px solid rgba(55, 53, 47, 0.09);
-  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
 
 .graph-controls {
@@ -326,11 +607,11 @@ button:disabled {
 
 .graph-image-container {
   text-align: center;
-  margin-top: 16px;
+  margin-top: 0;
   padding: 20px;
   background: white;
-  border: 1px solid rgba(55, 53, 47, 0.09);
-  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
 }
 
 .graph-image-title {
@@ -347,7 +628,468 @@ button:disabled {
   border: 1px solid rgba(55, 53, 47, 0.09);
 }
 
-/* Remove emoji from headers or make them smaller */
-.query-section h2::before {
-  display: none;
+/* Notion-style Table */
+.notion-table-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.notion-table-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  background: rgba(55, 53, 47, 0.02);
+}
+
+.notion-table-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notion-table-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notion-table-filter-button {
+  background: transparent;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  color: rgba(55, 53, 47, 0.65);
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.notion-table-filter-button:hover {
+  background: rgba(55, 53, 47, 0.06);
+  border-color: rgba(55, 53, 47, 0.2);
+}
+
+.notion-table-filter-button.active {
+  background: rgba(55, 53, 47, 0.08);
+  border-color: rgba(55, 53, 47, 0.3);
+  color: #37352f;
+}
+
+.notion-table-count {
+  font-size: 13px;
+  color: rgba(55, 53, 47, 0.65);
+}
+
+.notion-table-page-size {
+  width: 60px;
+  padding: 4px 8px;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.notion-table-filters {
+  padding: 12px;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  background: rgba(55, 53, 47, 0.01);
+}
+
+.notion-filter-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.notion-filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notion-filter-field label {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(55, 53, 47, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.notion-filter-field input,
+.notion-filter-field select {
+  padding: 5px 8px;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+  font-size: 13px;
+  width: 100%;
+}
+
+.notion-filter-actions {
+  display: flex;
+  align-items: flex-end;
+}
+
+.notion-filter-actions button {
+  padding: 5px 12px;
+  font-size: 13px;
+}
+
+.notion-table-wrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: calc(100vh - 400px);
+}
+
+.notion-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 13px;
+}
+
+.notion-table-header {
+  background: rgba(55, 53, 47, 0.02);
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(55, 53, 47, 0.65);
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  border-right: 1px solid rgba(55, 53, 47, 0.09);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.notion-table-header:last-child {
+  border-right: none;
+}
+
+.notion-table-header.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.notion-table-header.sortable:hover {
+  background: rgba(55, 53, 47, 0.04);
+}
+
+.notion-table-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sort-icon {
+  font-size: 12px;
+  color: rgba(55, 53, 47, 0.4);
+  font-weight: normal;
+}
+
+.notion-table-header.sortable.active .sort-icon {
+  color: #37352f;
+}
+
+.notion-table-row {
+  border-bottom: 1px solid rgba(55, 53, 47, 0.06);
+  transition: background 0.1s;
+}
+
+.notion-table-row:hover {
+  background: rgba(55, 53, 47, 0.02);
+}
+
+.notion-table-row td {
+  padding: 8px 12px;
+  border-right: 1px solid rgba(55, 53, 47, 0.06);
+  vertical-align: middle;
+}
+
+.notion-table-row td:last-child {
+  border-right: none;
+}
+
+.notion-table-row.notion-table-add-row td {
+  padding: 6px 12px;
+}
+
+.notion-table-loading,
+.notion-table-empty {
+  text-align: center;
+  padding: 24px;
+  color: rgba(55, 53, 47, 0.65);
+}
+
+.notion-table-actions {
+  text-align: center;
+  width: 80px;
+}
+
+.notion-table-delete-button,
+.notion-table-save-button,
+.notion-table-cancel-button {
+  background: transparent;
+  border: none;
+  color: rgba(55, 53, 47, 0.5);
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.notion-table-delete-button:hover {
+  background: rgba(204, 0, 0, 0.1);
+  color: #c00;
+}
+
+.notion-table-save-button {
+  color: rgba(55, 53, 47, 0.6);
+}
+
+.notion-table-save-button:hover {
+  background: rgba(55, 53, 47, 0.08);
+  color: #37352f;
+}
+
+.notion-table-cancel-button:hover {
+  background: rgba(55, 53, 47, 0.08);
+  color: #37352f;
+}
+
+.notion-table-add-row {
+  background: rgba(55, 53, 47, 0.01);
+}
+
+.notion-table-add-row:hover {
+  background: rgba(55, 53, 47, 0.03);
+}
+
+.notion-table-add-cell {
+  padding: 8px 12px !important;
+  text-align: left;
+}
+
+.notion-table-add-button {
+  background: transparent;
+  border: none;
+  color: rgba(55, 53, 47, 0.65);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.15s;
+}
+
+.notion-table-add-button:hover {
+  color: #37352f;
+}
+
+.notion-table-input {
+  width: 100%;
+  padding: 4px 8px;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: inherit;
+  background: white;
+}
+
+.notion-table-input:focus {
+  outline: none;
+  border-color: rgba(55, 53, 47, 0.3);
+}
+
+.notion-table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+  border-top: 1px solid rgba(55, 53, 47, 0.09);
+  background: rgba(55, 53, 47, 0.01);
+}
+
+.notion-table-pagination-button {
+  padding: 5px 12px;
+  font-size: 13px;
+}
+
+/* Tag Selector */
+.tag-selector {
+  position: relative;
+  width: 100%;
+}
+
+.tag-selector-input {
+  width: 100%;
+  padding: 4px 8px;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: inherit;
+  background: white;
+  color: #37352f;
+}
+
+.tag-selector-input:focus {
+  outline: none;
+  border-color: rgba(55, 53, 47, 0.3);
+}
+
+.tag-selector-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  max-width: 100%;
+}
+
+.tag-selector-tag:hover {
+  opacity: 0.8;
+}
+
+.tag-selector-clear {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+}
+
+.tag-selector-clear:hover {
+  opacity: 1;
+}
+
+.tag-selector-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+  box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Adjust dropdown position when near bottom of viewport */
+.tag-selector.dropdown-up .tag-selector-dropdown {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.tag-selector-options {
+  padding: 4px;
+}
+
+.tag-selector-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: background 0.1s;
+}
+
+.tag-selector-option:hover {
+  background: rgba(55, 53, 47, 0.06);
+}
+
+.tag-selector-option-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+
+.tag-selector-create {
+  border-top: 1px solid rgba(55, 53, 47, 0.09);
+  padding: 4px;
+}
+
+.tag-selector-create-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+  color: rgba(55, 53, 47, 0.65);
+  transition: background 0.1s;
+}
+
+.tag-selector-create-option:hover {
+  background: rgba(55, 53, 47, 0.06);
+  color: #37352f;
+}
+
+.tag-selector-create-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background: rgba(55, 53, 47, 0.08);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tag-selector-empty {
+  padding: 12px;
+  text-align: center;
+  color: rgba(55, 53, 47, 0.4);
+  font-size: 13px;
+}
+
+/* Predicate Tag */
+.predicate-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
 }

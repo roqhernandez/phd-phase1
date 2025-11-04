@@ -1401,6 +1401,108 @@ def api_select_file():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/create_file', methods=['POST'])
+def api_create_file():
+    """Create a new KG JSON file with default content."""
+    global kg, current_file
+    data_dir = os.path.join(os.path.dirname(__file__), 'data')
+    os.makedirs(data_dir, exist_ok=True)
+    
+    # Generate unique filename
+    base_name = 'NewFile'
+    counter = 0
+    filename = f'{base_name}.json'
+    while os.path.exists(os.path.join(data_dir, filename)):
+        counter += 1
+        filename = f'{base_name}{counter}.json'
+    
+    target = os.path.join(data_dir, filename)
+    
+    try:
+        # Create new KG with default triples: Car is_a Vehicle
+        new_kg = ScientificKnowledgeGraph()
+        new_kg.add_triple('Car', 'is_a', 'Vehicle', confidence=1.0, source='default')
+        
+        # Save to file
+        new_kg.save_to_json(target)
+        
+        # Load it as the current file
+        kg = new_kg
+        current_file = target
+        _save_visualization()
+        
+        return jsonify({'ok': True, 'filename': filename})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/rename_file', methods=['POST'])
+def api_rename_file():
+    """Rename a KG JSON file."""
+    global kg, current_file
+    data = request.get_json()
+    old_name = data.get('old_name', '').strip()
+    new_name = data.get('new_name', '').strip()
+    
+    if not old_name or not new_name:
+        return jsonify({'error': 'Old and new file names required'}), 400
+    
+    # Ensure .json extension
+    if not new_name.endswith('.json'):
+        new_name += '.json'
+    
+    data_dir = os.path.join(os.path.dirname(__file__), 'data')
+    old_path = os.path.join(data_dir, os.path.basename(old_name))
+    new_path = os.path.join(data_dir, os.path.basename(new_name))
+    
+    if not os.path.isfile(old_path):
+        return jsonify({'error': f'File not found: {old_name}'}), 404
+    
+    if os.path.exists(new_path):
+        return jsonify({'error': f'File already exists: {new_name}'}), 400
+    
+    try:
+        os.rename(old_path, new_path)
+        
+        # Update current_file if it was the renamed file
+        if current_file == old_path:
+            current_file = new_path
+            # Reload the graph
+            kg = ScientificKnowledgeGraph()
+            kg.load_from_json(new_path)
+            _save_visualization()
+        
+        return jsonify({'ok': True, 'filename': new_name})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/delete_file', methods=['POST'])
+def api_delete_file():
+    """Delete a KG JSON file."""
+    global kg, current_file
+    data = request.get_json()
+    name = data.get('name', '').strip()
+    
+    if not name:
+        return jsonify({'error': 'File name required'}), 400
+    
+    data_dir = os.path.join(os.path.dirname(__file__), 'data')
+    target = os.path.join(data_dir, os.path.basename(name))
+    
+    if not os.path.isfile(target):
+        return jsonify({'error': f'File not found: {name}'}), 404
+    
+    try:
+        os.remove(target)
+        
+        # If this was the current file, clear it
+        if current_file == target:
+            kg = ScientificKnowledgeGraph()
+            current_file = None
+        
+        return jsonify({'ok': True})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/neighbors')
 def api_neighbors():
     """Find neighbors of a concept."""

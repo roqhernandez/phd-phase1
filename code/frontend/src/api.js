@@ -6,6 +6,9 @@ export const api = {
   // Files
   getFiles: () => axios.get(`${API_BASE}/files`).then(r => r.data),
   selectFile: (name) => axios.get(`${API_BASE}/select_file?name=${encodeURIComponent(name)}`).then(r => r.data),
+  createFile: () => axios.post(`${API_BASE}/create_file`).then(r => r.data),
+  renameFile: (oldName, newName) => axios.post(`${API_BASE}/rename_file`, { old_name: oldName, new_name: newName }).then(r => r.data),
+  deleteFile: (name) => axios.post(`${API_BASE}/delete_file`, { name }).then(r => r.data),
   
   // Stats
   getStats: () => axios.get(`${API_BASE}/stats`).then(r => r.data),

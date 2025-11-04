@@ -334,7 +334,7 @@ class ScientificKnowledgeGraph:
         
         Args:
             concept: If provided, show neighborhood around this concept
-            radius: Size of neighborhood to show
+            radius: Size of neighborhood to shown
             figsize: Figure size
         """
         if concept:
